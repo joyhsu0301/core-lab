@@ -1,0 +1,30 @@
+body {
+	background-color: rgb(255,255,245);
+}
+h1 {
+	font-family: 'futura';
+	font-weight: normal;
+	letter-spacing: 20pt;
+	font-size: 60pt;
+	color: rgb(0,0,0);
+	z-index: 100;
+}
+.fname {
+	position: absolute;
+	top: 0%;
+	left: 5%;
+}
+.lname {
+	position: absolute;
+	top: 8%;
+	left: 40%;
+}
+.work {
+	background-color: rgb(247,148,29);
+	position: absolute;
+	top: 25%;
+	left: 15%;
+	height: 300pt;
+	width: 500pt;
+	z-index: 1;
+}
