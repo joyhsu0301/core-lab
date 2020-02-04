@@ -1,0 +1,22 @@
+body {
+	background-color: rgb(163, 181, 165);
+}
+p {
+	font-family: 'courier';
+	font-size: 12pt;
+	color: rgb(0,0,0);
+}
+.window {
+	position: absolute;
+	height: 500px;
+	width: 700px;
+	z-index: 1;
+}
+.week1 {
+	position: absolute;
+	top: 6%;
+	left: 3%;
+	height: 500px;
+	width: 600px;
+	z-index: 2;
+}

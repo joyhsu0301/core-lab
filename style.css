@@ -28,3 +28,22 @@ h1 {
 	width: 500pt;
 	z-index: 1;
 }
+/*.readings {
+	background-color: rgb(28,148,29);
+	position: absolute;
+	top: 10%;
+	left: 75%;
+	height: 100pt;
+	width: 150pt;
+	z-index: 1;
+}*/
+img {
+	position: absolute;
+	top: 10%;
+	left: 75%;
+	height: 100pt;
+	width: 150pt;
+	z-index: 1;
+}
+
+
