@@ -9,32 +9,77 @@ h1 {
 	color: rgb(0,0,0);
 	z-index: 100;
 }
+
 .fname {
 	position: absolute;
 	top: 0%;
-	left: 5%;
+	left: 10%;
 }
 .lname {
 	position: absolute;
-	top: 8%;
-	left: 40%;
+	top: 12%;
+	left: 14.5%;
 }
-/*.readings {
-	background-color: rgb(28,148,29);
+.reading {
 	position: absolute;
 	top: 10%;
 	left: 75%;
-	height: 100pt;
-	width: 150pt;
-	z-index: 1;
-}*/
-img {
-	position: absolute;
-	top: 10%;
-	left: 75%;
-	height: 100pt;
-	width: 150pt;
-	z-index: 1;
+	height: 200px;
+	width: 300px;
+	z-index: 99;
 }
+.shadowr {
+	position: absolute;
+	top: 13%;
+	left: 73%;
+	height: 200px;
+	width: 300px;
+	background-color: rgb(94, 111, 138);
+	z-index: 98;
+}
+.textr {
+	position: absolute;
+	top: 39%;
+	left: 75%;
+	font-family: helvetica;
+	font-size: 30pt;
+	z-index: 100;
+	line-height: 25pt;
+	display: none;
+}
+.textrr {
+	display: inline-flex;
+}
+.homework {
+	position: absolute;
+	top: 40%;
+	left: 45%;
+	height: 200px;
+	width: 300px;
+	z-index: 99;
+}
+.shadowh {
+	position: absolute;
+	top: 43%;
+	left: 43%;
+	height: 200px;
+	width: 300px;
+	background-color: rgb(100, 122, 122);
+	z-index: 90;
+}
+.texth {
+	position: absolute;
+	top: 68%;
+	left: 45%;
+	font-family: helvetica;
+	font-size: 30pt;
+	z-index: 100;
+	display: none;
+}
+.texthh {
+	display: inline-flex;
+}
+
+
 
 
