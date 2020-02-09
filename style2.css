@@ -6,10 +6,24 @@ p {
 	font-size: 12pt;
 	color: rgb(0,0,0);
 }
+h3 {
+	font-family: 'courier';
+	font-size: 12pt;
+	font-weight: bold;
+	color: rgb(0,0,0);
+}
 .window {
 	position: absolute;
-	height: 500px;
+	height: 460px;
 	width: 700px;
+	z-index: 1;
+}
+.window2 {
+	position: absolute;
+	top: 2%;
+	left: 42%;
+	height: 1400px;
+	width: 945px;
 	z-index: 1;
 }
 .week1 {
@@ -17,6 +31,14 @@ p {
 	top: 6%;
 	left: 3%;
 	height: 500px;
-	width: 600px;
+	width: 630px;
+	z-index: 2;
+}
+.week2 {
+	position: absolute;
+	top: 20%;
+	left: 52.5%;
+	height: 500px;
+	width: 630px;
 	z-index: 2;
 }

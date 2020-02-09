@@ -4,22 +4,32 @@ $(document).ready(function(){
 	//shadows under gifs
 	$('.reading').bind('mouseenter', function(){
 		$('.shadow').addClass('shadowr');
-		$('.textr').addClass('textrr');
+		$('.textr').addClass('textshow');
 	})
 
 	$('.reading').bind('mouseleave', function(){
 		$('.shadow').removeClass('shadowr');
-		$('.textr').removeClass('textrr');
+		$('.textr').removeClass('textshow');
 	})
  
  	$('.homework').bind('mouseenter', function(){
 		$('.shadow').addClass('shadowh');
-		$('.texth').addClass('texthh');
+		$('.texth').addClass('textshow');
 	})
 
 	$('.homework').bind('mouseleave', function(){
 		$('.shadow').removeClass('shadowh');
-		$('.texth').removeClass('texthh');
+		$('.texth').removeClass('textshow');
+	})
+
+	 $('.homework2').bind('mouseenter', function(){
+		$('.shadow').addClass('shadowh2');
+		$('.texth2').addClass('textshow');
+	})
+
+	$('.homework2').bind('mouseleave', function(){
+		$('.shadow').removeClass('shadowh2');
+		$('.texth2').removeClass('textshow');
 	})
 	
 

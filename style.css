@@ -1,5 +1,6 @@
 body {
 	background-color: rgb(255,255,255);
+	height: 1000px;
 }
 h1 {
 	font-family: 'futura';
@@ -20,6 +21,7 @@ h1 {
 	top: 12%;
 	left: 14.5%;
 }
+
 .reading {
 	position: absolute;
 	top: 10%;
@@ -47,7 +49,7 @@ h1 {
 	line-height: 25pt;
 	display: none;
 }
-.textrr {
+.textshow {
 	display: inline-flex;
 }
 .homework {
@@ -57,6 +59,7 @@ h1 {
 	height: 200px;
 	width: 300px;
 	z-index: 99;
+	filter: grayscale(100%);
 }
 .shadowh {
 	position: absolute;
@@ -64,7 +67,7 @@ h1 {
 	left: 43%;
 	height: 200px;
 	width: 300px;
-	background-color: rgb(100, 122, 122);
+	background-color: rgb(71, 71, 71);
 	z-index: 90;
 }
 .texth {
@@ -76,10 +79,39 @@ h1 {
 	z-index: 100;
 	display: none;
 }
-.texthh {
+.textshow {
 	display: inline-flex;
 }
-
+.homework2 {
+	position: absolute;
+	top: 80%;
+	left: 70%;
+	height: 200px;
+	width: 300px;
+	z-index: 99;
+}
+.shadowh2 {
+	position: absolute;
+	top: 83%;
+	left: 68%;
+	height: 200px;
+	width: 300px;
+	background-color: rgb(100, 122, 122);
+	z-index: 90;
+}
+.texth2 {
+	position: absolute;
+	top: 109%;
+	left: 70%;
+	font-family: helvetica;
+	line-height: 25pt;
+	font-size: 30pt;
+	z-index: 100;
+	display: none;
+}
+.textshow {
+	display: inline-flex;
+}
 
 
 
