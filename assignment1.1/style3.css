@@ -1,0 +1,139 @@
+/* padding, border, margin, position, float, clear, top, left, height, width*/
+body {
+	margin: 0px;
+	padding: 0px;
+}
+p {
+	position: relative;
+	top: 20px;
+	left: 700px;
+	border: solid 2px rgb(0,0,0);
+	width: 100px;
+}
+
+.step1 {
+	position: absolute;
+	top: 150px;
+	left: 190px;
+	width: 200px;
+	height: 150px;
+}
+#beetroot {
+	position: absolute;
+	top: 180px;
+	left: 10px;
+}
+#butter {
+	position: absolute;
+	top: 220px;
+	left: 490px;
+}
+#onion {
+	position: absolute;
+	top: 260px;
+	left: 10px;
+}
+
+.step2 {
+	position: absolute;
+	top: 500px;
+	left: 1050px;
+	width: 200px;
+	height: 500px;
+}
+#carrot {
+	position: absolute;
+	top: 410px;
+	left: 1100px;
+}
+#leek {
+	position: absolute;
+	top: 470px;
+	left: 1300px;
+}
+#celery {
+	position: absolute;
+	top: 520px;
+	left: 850px;
+}
+#allspice {
+	position: absolute;
+	top: 520px;
+	left: 1300px;
+}
+#bayleaf {
+	position: absolute;
+	top: 550px;
+	left: 870px;
+}
+#stock {
+	position: absolute;
+	top: 590px;
+	left: 800px;
+}
+#peels {
+	position: absolute;
+	top: 420px;
+	left: 880px;
+	width: 170px;
+}
+
+.step3 {
+	position: absolute;
+	top: 1000px;
+	left: 300px;
+	width: 200px;
+	height: 500px;
+}
+#potatoes {
+	position: absolute;
+	top: 1025px;
+	left: 580px;
+	width: 160px;
+	height: 500px;
+}
+#cabbage {
+	position: absolute;
+	top: 1040px;
+	left: 100px;
+	width: 160px;
+	height: 500px;
+}
+#garlic {
+	position: absolute;
+	top: 1200px;
+	left: 280px;
+	width: 160px;
+	height: 500px;
+}
+
+.step4 {
+	position: absolute;
+	top: 1500px;
+	left: 800px;
+	width: 200px;
+	height: 500px;
+}
+#sourcream {
+	position: absolute;
+	top: 1580px;
+	left: 1100px;
+	width: 170px;
+}
+#vinegar {
+	position: absolute;
+	top: 1400px;
+	left: 840px;
+	width: 170px;
+}
+#sugar {
+	position: absolute;
+	top: 1470px;
+	left: 1100px;
+}
+#pepper {
+	position: absolute;
+	top: 1500px;
+	left: 620px;
+	width: 120px;
+}

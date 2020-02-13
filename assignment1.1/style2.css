@@ -1,0 +1,84 @@
+/* padding, border, margin, position, float, clear, top, left, height, width*/
+
+body {
+	padding: 10px;
+	margin: 10px;
+}
+/* ingredients */
+#grams {
+	position: absolute;
+	top: 20px;
+	left: 320px;
+	border: solid 1px rgb(0,0,0);
+	width: 150px;
+}
+#litre {
+	position: absolute;
+	top: 260px;
+	left: 540px;
+	border: solid 1px rgb(0,0,0);
+	width: 170px;
+}
+#half {
+	position: absolute;
+	top: 110px;
+	left: 500px;
+	border: solid 1px rgb(0,0,0);
+	width: 190px;
+}
+#cloves {
+	position: absolute;
+	top: 50px;
+	left: 900px;
+	border: solid 1px rgb(0,0,0);
+	width: 150px;
+}
+#two {
+	position: absolute;
+	top: 180px;
+	left: 850px;
+	border: solid 1px rgb(0,0,0);
+	width: 250px;
+}
+#one {
+	position: absolute;
+	top: 100px;
+	left: 20px;
+	border: solid 1px rgb(0,0,0);
+	width: 170px;
+}
+#sourcream {
+	position: absolute;
+	top: 130px;
+	left: 1150px;
+	border: solid 1px rgb(0,0,0);
+}
+
+/*recipe instructions*/
+#step1 {
+	position: absolute;
+	top: 350px;
+	width: 200px;
+	height: 400px;
+}
+#step2 {
+	position: absolute;
+	top: 350px;
+	left: 350px;
+	width: 270px;
+	height: 400px;
+}
+#step3 {
+	position: absolute;
+	top: 350px;
+	left: 700px;
+	width: 200px;
+	height: 400px;
+}
+#step4 {
+	position: absolute;
+	top: 350px;
+	left: 1050px;
+	width: 200px;
+	height: 400px;
+}

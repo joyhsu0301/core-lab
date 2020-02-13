@@ -1,0 +1,22 @@
+/* padding, border, margin, position, float, clear, top, left, height, width*/
+
+body {
+	padding: 10px;
+	margin: 200px;
+}
+div {
+	width: 170px;
+	height: 100px;
+	padding: 20px;
+	position: absolute;
+	top: 225px;
+	left: 38%;
+}
+.serving {
+	position: absolute;
+	top: 210px;
+	left: 690px;
+}
+.recipe {
+	width: 550px;
+}

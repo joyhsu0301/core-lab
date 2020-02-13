@@ -1,0 +1,99 @@
+/* padding, border, margin, position, float, clear, top, left, height, width*/
+
+body {
+	padding: 10px;
+	margin: 10px;
+}
+.letterb, .letterc, .letterg, .letters {
+	position: relative;
+	top: -7px;
+}
+/* ingredients */
+#bayleaf {
+	position: absolute;
+	top: 70px;
+	left: 30px;
+}
+#beetroot {
+	position: absolute;
+	top: 90px;
+}
+#butter {
+	position: absolute;
+	top: 110px;
+	left: 28px;
+}
+#vinegar {
+	position: absolute;
+	top: 150px;
+	left: 70px;
+}
+#carrot {
+	position: absolute;
+	top: 170px;
+	left: 62px;
+}
+#celery {
+	position: absolute;
+	top: 190px;
+	left: 49px;
+}
+#garlic {
+	position: absolute;
+	top: 210px;
+	left: 100px;
+}
+#stock {
+	position: absolute;
+	top: 230px;
+	left: 128px;
+}
+#pepper {
+	position: absolute;
+	top: 250px;
+	left: 108px;
+}
+#allspice {
+	position: absolute;
+	top: 270px;
+	left: 144px;
+}
+#potatoes {
+	position: absolute;
+	top: 310px;
+	left: 30px;
+}
+#sourcream {
+	position: absolute;
+	top: 330px;
+	left: 187px;
+}
+#cabbage {
+	position: absolute;
+	top: 350px;
+	left: 162px;
+}
+#sugar {
+	position: absolute;
+	top: 370px;
+	left: 143px;
+}
+#onion {
+	position: absolute;
+	top: 390px;
+	left: 173px;
+}
+#leek {
+	position: absolute;
+	top: 410px;
+	left: 173px;
+}
+
+#instructions {
+	position: absolute;
+	left: 1040px;
+	top: 50px;
+	width: 320px;
+}
+
+
