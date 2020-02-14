@@ -22,6 +22,7 @@ h1 {
 	left: 14.5%;
 }
 
+/* reading repsonses*/
 .reading {
 	position: absolute;
 	top: 10%;
@@ -52,6 +53,8 @@ h1 {
 .textshow {
 	display: inline-flex;
 }
+
+/* assignment 1 */
 .homework {
 	position: absolute;
 	top: 40%;
@@ -82,6 +85,8 @@ h1 {
 .textshow {
 	display: inline-flex;
 }
+
+/* assignment 2 */
 .homework2 {
 	position: absolute;
 	top: 80%;
@@ -103,6 +108,38 @@ h1 {
 	position: absolute;
 	top: 109%;
 	left: 70%;
+	font-family: helvetica;
+	line-height: 25pt;
+	font-size: 30pt;
+	z-index: 100;
+	display: none;
+}
+.textshow {
+	display: inline-flex;
+}
+
+/* assignment 3 (studio) */
+.homework3 {
+	position: absolute;
+	top: 70%;
+	left: 10%;
+	height: 200px;
+	width: 300px;
+	z-index: 99;
+}
+.shadowh3 {
+	position: absolute;
+	top: 73%;
+	left: 8%;
+	height: 200px;
+	width: 300px;
+	background-color: rgb(84, 75, 66);
+	z-index: 90;
+}
+.texth3 {
+	position: absolute;
+	top: 99%;
+	left: 10%;
 	font-family: helvetica;
 	line-height: 25pt;
 	font-size: 30pt;

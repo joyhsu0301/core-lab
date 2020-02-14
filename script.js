@@ -22,7 +22,7 @@ $(document).ready(function(){
 		$('.texth').removeClass('textshow');
 	})
 
-	 $('.homework2').bind('mouseenter', function(){
+	$('.homework2').bind('mouseenter', function(){
 		$('.shadow').addClass('shadowh2');
 		$('.texth2').addClass('textshow');
 	})
@@ -32,5 +32,14 @@ $(document).ready(function(){
 		$('.texth2').removeClass('textshow');
 	})
 	
+	$('.homework3').bind('mouseenter', function(){
+		$('.shadow').addClass('shadowh3');
+		$('.texth3').addClass('textshow');
+	})
+
+	$('.homework3').bind('mouseleave', function(){
+		$('.shadow').removeClass('shadowh3');
+		$('.texth3').removeClass('textshow');
+	})
 
 });
