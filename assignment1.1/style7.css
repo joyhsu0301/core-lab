@@ -1,5 +1,38 @@
 /* font-style, font-weight, font-size, font-family, text-algin, line-height, letter-spacing, text-transform + all the other css from before */
 
 body {
-	margin: ;
+	margin: 0px;
+	padding: 0px;
+}
+h1 {
+	text-align: center;
+	font-family: 'didot';
+	font-size: 40pt;
+}
+h4 {
+	font-family: 'didot';
+	font-weight: bold;
+	font-size: 12pt;
+}
+p {
+	position: relative;
+	top: -10px;
+	text-align: center;
+	font-family: 'proxima nova';
+}
+ol {
+	text-align: center;
+	font-family: 'proxima nova';
+	font-size: 10pt;
+}
+.ingredients {
+	position: absolute;
+	font-family: 'didot';
+	font-size: 14pt;
+	line-height: 40pt;
+	font-weight: bold;
+	top: 700px;
+	left: 20px;
+	text-transform: uppercase;
+	text-align: center;	
 }

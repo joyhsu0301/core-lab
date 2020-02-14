@@ -1,5 +1,63 @@
 /* font-style, font-weight, font-size, font-family, text-algin, line-height, letter-spacing, text-transform + all the other css from before */
 
 body {
-	margin: ;
+	margin: 5px;
+	padding: 0px;
+}
+h1 {
+	position: absolute;
+	font-family: 'neue';
+	font-style: italic;
+	font-size: 100pt;
+	text-transform: uppercase;
+}
+h2 {
+	position: absolute;
+	top: 800px;
+	line-height: 20px;
+}
+p {
+	position: relative;
+	line-height: 20pt;
+	width: 350px;
+}
+.serving {
+	top: 140px;
+	left: 45px;
+	font-weight: normal;
+}
+.part1 {
+	top: 400px;
+}
+.part2 {
+	top: 350px;
+	left: 500px;
+}
+.part3 {
+	top: 400px;
+	left: 700px;
+}
+.part4 {
+	top: 330px;
+	left: 100px;
+}
+.part5 {
+	top: 400px;
+	left: 1000px;
+}
+.part6 {
+	top: -50px;
+	left: 900px;
+}
+.part7 {
+	top: 270px;
+	left: 20px;
+}
+.part8 {
+	top: 180px;
+	left: 480px;
+}
+.part9 {
+	top: -150px;
+	left: 1080px;
 }

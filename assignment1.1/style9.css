@@ -1,5 +1,42 @@
 /* font-style, font-weight, font-size, font-family, text-algin, line-height, letter-spacing, text-transform + all the other css from before */
 
 body {
-	margin: ;
+	margin: 0px;
+	padding: 0px;
+}
+p {
+	position: absolute;
+	top: 7px;
+	left: 370px;
+	font-family: 'aktiv grotesk';
+	text-transform: uppercase;
+	font-size: 50pt;
+}
+h3 {
+	position: absolute;
+	font-family: 'courier';
+	text-transform: lowercase;
+	font-size: 30pt;
+	left: 400px;
+}
+h4 {
+	position: absolute;
+	font-family: 'aktiv grotesk';
+	text-transform: uppercase;
+	width: 400px;
+	left: 370px;
+	line-height: 15px;
+}
+ul {
+	font-family: 'courier';
+	font-size: 15pt;
+	width: 300px;
+}
+.title1 {
+	top: 40px;
+	left: 700px;
+}
+.title2 {
+	top: 70px;
+	left: 700px;
 }

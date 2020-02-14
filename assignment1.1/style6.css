@@ -1,5 +1,31 @@
 /* font-style, font-weight, font-size, font-family, text-algin, line-height, letter-spacing, text-transform + all the other css from before */
 
 body {
-	margin: ;
+	margin: 10px;
+	padding: 10px;
+}
+h1 {
+	font-family: 'helvetica';
+	font-size: 30pt;
+	font-weight: bold;
+}
+p {
+	position: absolute;
+	top: 82px;
+	left: 25px;
+	font-family: 'georgia';
+	letter-spacing: 25pt;
+}
+ul {
+	position: relative;
+	left: 340px;
+	font-family: 'helvetica';
+	font-weight: bold;
+	width: 360px;
+}
+ol {
+	position: relative;
+	width: 360px;
+	left: 340px;
+	font-family: 'georgia';
 }
