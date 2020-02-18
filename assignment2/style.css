@@ -38,11 +38,31 @@ body {
 	animation-name: blinkingbackground;
 	animation-duration: 1.2s;
 	animation-iteration-count: 2;
-	z-index: 10;animation-name: blinkingbackground;
+	animation-name: blinkingbackground;
 	animation-duration: 1.2s;
 	animation-iteration-count: 2;
 	z-index: 20;
 }
 .safetycone:hover {
-	filter: blur(0);
+	width: 100px;
+	height: 100px;
+}
+.bin {
+	position: absolute;
+	filter: blur(0.5rem);
+	top: 790px;
+	left: 740px;
+	width: 80px;
+	height: 80px;
+	animation-name: blinkingbackground;
+	animation-duration: 1.2s;
+	animation-iteration-count: 2;
+	animation-name: blinkingbackground;
+	animation-duration: 1.2s;
+	animation-iteration-count: 2;
+	z-index: 20;
+}
+.bin:hover {
+	width: 90px;
+	height: 90px;
 }
