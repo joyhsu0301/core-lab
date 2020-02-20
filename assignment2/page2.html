@@ -4,15 +4,37 @@
 	<title>As If You Were Near Sighted</title>
 </head>
 <body>
-	<img src="cone.png" alt="safetycone" class="cone">
+	<img src="streetpics/coneview.jpg" alt="coneview" class="coneview">
+	<a href="page2_5.html">
+		<img src="lock.png" alt="lock" class="lock">
+	</a>
 </body>
+
 <style type="text/css">
-	.cone {
-	position: absolute;
-	top: 120px;
-	left: 470px;
-	width: 500px;
-	height: 500px;
-}
+	body {
+		margin: 0px;
+		overflow: hidden;
+	}
+	.coneview {
+	position: relative;
+	filter: blur(0.2rem);
+	bottom: 200px;
+	max-width: 108vw;
+	max-height: 150vh;
+	}
+	.lock {
+		position: absolute;
+		filter: blur(0.2rem);
+		top: 29%;
+		left: 56%;
+		width: 270px;
+		height: 270px;
+		z-index: 10;
+	}
+	.lock:hover {
+		width: 280px;
+		height: 280px;
+	}
 </style>
+
 </html>

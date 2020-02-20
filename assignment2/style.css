@@ -17,11 +17,18 @@ body {
 		opacity: 0;
 	}
 }
-.blinkingbackground {
+iframe {
+	display: none;
+}
+.envelope {
 	position: absolute;
+}
+
+.blinkingbackground {
+	position: relative;
 	filter: blur(0.5rem);
-	width: 148%;
-	height: 180%;
+	max-width: 148vw;
+	max-height: 190vh;
 	animation-name: blinkingbackground;
 	animation-duration: 1.2s;
 	animation-iteration-count: 2;
@@ -31,10 +38,10 @@ body {
 .safetycone {
 	position: absolute;
 	filter: blur(0.5rem);
-	top: 120%;
-	left: 86%;
-	width: 90px;
-	height: 90px;
+	top: 79%;
+	left: 76%;
+	width: 120px;
+	height: 120px;
 	animation-name: blinkingbackground;
 	animation-duration: 1.2s;
 	animation-iteration-count: 2;
@@ -44,16 +51,16 @@ body {
 	z-index: 20;
 }
 .safetycone:hover {
-	width: 100px;
-	height: 100px;
+	width: 130px;
+	height: 130px;
 }
-.bin {
+.booth {
 	position: absolute;
 	filter: blur(0.5rem);
-	top: 790px;
-	left: 740px;
-	width: 80px;
-	height: 80px;
+	top: 70%;
+	left: 61.5%;
+	width: 60px;
+	height: 60px;
 	animation-name: blinkingbackground;
 	animation-duration: 1.2s;
 	animation-iteration-count: 2;
@@ -62,7 +69,7 @@ body {
 	animation-iteration-count: 2;
 	z-index: 20;
 }
-.bin:hover {
-	width: 90px;
-	height: 90px;
+.booth:hover {
+	width: 70px;
+	height: 70px;
 }
