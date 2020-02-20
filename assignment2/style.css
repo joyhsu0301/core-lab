@@ -28,8 +28,8 @@ iframe {
 .blinkingbackground {
 	position: relative;
 	filter: blur(0.5rem);
-	max-width: 148vw;
-	max-height: 190vh;
+	width: 200%;
+	height: 100%;
 	animation-name: blinkingbackground;
 	animation-duration: 1.2s;
 	animation-iteration-count: 2;
@@ -40,7 +40,7 @@ iframe {
 	position: absolute;
 	filter: blur(0.5rem);
 	top: 79%;
-	left: 76%;
+	left: 153%;
 	width: 120px;
 	height: 120px;
 	animation-name: blinkingbackground;
@@ -59,7 +59,7 @@ iframe {
 	position: absolute;
 	filter: blur(0.5rem);
 	top: 70%;
-	left: 61.5%;
+	left: 123%;
 	width: 60px;
 	height: 60px;
 	animation-name: blinkingbackground;
