@@ -4,12 +4,27 @@
 	<title>As If You Were Near Sighted</title>
 </head>
 <body>
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/JUcKrhlrHb0?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 	<img src="streetpics/boothview.jpg" alt="booth" class="boothview">
+
+	<a href="page3_5.html">
+		<img src="biggerbooth.png" alt="booth" class="booth">
+	</a>
+
+	<a href="page4.html">
+		<img src="sign.png" alt="streetsign" class="sign">
+	</a>
+
 </body>
 <style type="text/css">
 	body {
 		margin: 0px;
 		overflow: hidden;
+	}
+	iframe {
+		display: none;
 	}
 	.boothview {
 	position: relative;
@@ -17,6 +32,30 @@
 	bottom: 200px;
 	max-width: 108vw;
 	max-height: 150vh;
+	}
+	.booth {
+		position: absolute;
+		filter: blur(0.2rem);
+		top: 38%;
+		left: 63%;
+		width: 240px;
+		height: 440px;
+	}
+	.booth:hover {
+		width: 245px;
+		height: 445px;
+	}
+	.sign {
+		position: absolute;
+		filter: blur(0.2rem);
+		top: 22%;
+		left: 64.3%;
+		width: 80px;
+		height: 40px;
+	}
+	.sign:hover {
+		width: 85px;
+		height: 45px;
 	}
 </style>
 </html>
