@@ -11,7 +11,9 @@ $(document).ready(function(){
 		$('.shadow').removeClass('shadowr');
 		$('.textr').removeClass('textshow');
 	})
- 
+ 	
+ 	//homework1
+
  	$('.homework').bind('mouseenter', function(){
 		$('.shadow').addClass('shadowh');
 		$('.texth').addClass('textshow');
@@ -22,6 +24,8 @@ $(document).ready(function(){
 		$('.texth').removeClass('textshow');
 	})
 
+	//homework2
+
 	$('.homework2').bind('mouseenter', function(){
 		$('.shadow').addClass('shadowh2');
 		$('.texth2').addClass('textshow');
@@ -31,6 +35,8 @@ $(document).ready(function(){
 		$('.shadow').removeClass('shadowh2');
 		$('.texth2').removeClass('textshow');
 	})
+
+	//homework3
 	
 	$('.homework3').bind('mouseenter', function(){
 		$('.shadow').addClass('shadowh3');
@@ -40,6 +46,18 @@ $(document).ready(function(){
 	$('.homework3').bind('mouseleave', function(){
 		$('.shadow').removeClass('shadowh3');
 		$('.texth3').removeClass('textshow');
+	})
+
+	//homework4
+
+	$('.homework4').bind('mouseenter', function(){
+		$('.shadow').addClass('shadowh4');
+		$('.texth4').addClass('textshow');
+	})
+
+	$('.homework4').bind('mouseleave', function(){
+		$('.shadow').removeClass('shadowh4');
+		$('.texth4').removeClass('textshow');
 	})
 
 });

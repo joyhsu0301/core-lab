@@ -1,6 +1,6 @@
 body {
 	background-color: rgb(255,255,255);
-	height: 1000px;
+	height: 1500px;
 }
 h1 {
 	font-family: 'futura';
@@ -42,7 +42,7 @@ h1 {
 }
 .textr {
 	position: absolute;
-	top: 39%;
+	top: 38%;
 	left: 75%;
 	font-family: helvetica;
 	font-size: 30pt;
@@ -75,7 +75,7 @@ h1 {
 }
 .texth {
 	position: absolute;
-	top: 68%;
+	top: 67%;
 	left: 45%;
 	font-family: helvetica;
 	font-size: 30pt;
@@ -106,7 +106,7 @@ h1 {
 }
 .texth2 {
 	position: absolute;
-	top: 109%;
+	top: 108%;
 	left: 70%;
 	font-family: helvetica;
 	line-height: 25pt;
@@ -138,7 +138,7 @@ h1 {
 }
 .texth3 {
 	position: absolute;
-	top: 99%;
+	top: 98%;
 	left: 10%;
 	font-family: helvetica;
 	line-height: 25pt;
@@ -150,5 +150,36 @@ h1 {
 	display: inline-flex;
 }
 
+/* assignment 4 */
+.homework4 {
+	position: absolute;
+	top: 113%;
+	left: 35%;
+	height: 200px;
+	width: 300px;
+	z-index: 99;
+}
+.shadowh4 {
+	position: absolute;
+	top: 116%;
+	left: 33%;
+	height: 200px;
+	width: 300px;
+	background-color: rgb(150, 115, 54);
+	z-index: 90;
+}
+.texth4 {
+	position: absolute;
+	top: 141%;
+	left: 35%;
+	font-family: helvetica;
+	line-height: 25pt;
+	font-size: 30pt;
+	z-index: 100;
+	display: none;
+}
+.textshow {
+	display: inline-flex;
+}
 
 
