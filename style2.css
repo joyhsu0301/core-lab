@@ -12,33 +12,45 @@ h3 {
 	font-weight: bold;
 	color: rgb(0,0,0);
 }
-.window {
+.window, .window2, .window3 {
 	position: absolute;
-	height: 460px;
-	width: 700px;
 	z-index: 1;
 }
+.window {
+	height: 460px;
+	width: 700px;
+}
 .window2 {
-	position: absolute;
 	top: 2%;
 	left: 42%;
-	height: 1400px;
+	height: 1360px;
 	width: 945px;
+}
+.window3 {
+	top: 66%;
+	left: 0.2%;
+	height: 690px;
+	width: 713px;
+}
+.week1, .week2, .week3 {
+	position: absolute;
 	z-index: 1;
 }
 .week1 {
-	position: absolute;
 	top: 6%;
 	left: 3%;
 	height: 500px;
 	width: 630px;
-	z-index: 2;
 }
 .week2 {
-	position: absolute;
-	top: 20%;
+	top: 18%;
 	left: 52.5%;
 	height: 500px;
 	width: 630px;
-	z-index: 2;
+}
+.week3 {
+	top: 71%;
+	left: 3%;
+	height: 500px;
+	width: 630px;
 }
