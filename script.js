@@ -60,4 +60,17 @@ $(document).ready(function(){
 		$('.texth4').removeClass('textshow');
 	})
 
+	//homework5
+
+	$('.homework5').bind('mouseenter', function(){
+		$('.shadow').addClass('shadowh5');
+		$('.texth5').addClass('textshow');
+	})
+
+	$('.homework5').bind('mouseleave', function(){
+		$('.shadow').removeClass('shadowh5');
+		$('.texth5').removeClass('textshow');
+	})
+
+
 });
