@@ -103,6 +103,26 @@ $(document).ready(function(){
 			img2.style.height='300px';
 			img2.style.transform='rotate(-10deg)';
 			document.body.appendChild(img2);
+			var img3=document.createElement('img');
+			img3.src='typewriter.png';
+			img3.style.zIndex='11';
+			img3.style.position='absolute';
+			img3.style.top='800px';
+			img3.style.left='200px';
+			img3.style.width='300px';
+			img3.style.height='300px';
+			img3.style.transform='rotate(20deg)';
+			document.body.appendChild(img3);
+			var img4=document.createElement('img');
+			img4.src='calculator.png';
+			img4.style.zIndex='11';
+			img4.style.position='absolute';
+			img4.style.top='600px';
+			img4.style.left='900px';
+			img4.style.width='300px';
+			img4.style.height='300px';
+			img4.style.transform='rotate(-30deg)';
+			document.body.appendChild(img4);
 		});
 	});
 
