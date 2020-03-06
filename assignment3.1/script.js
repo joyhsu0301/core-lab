@@ -4,6 +4,9 @@ $(document).ready(function(){
 	document.getElementById('heading').style.fontFamily='helvetica';
 	document.getElementById('subheading').style.fontFamily='helvetica';
 
+	$('#p1').css({'zIndex':'10'});
+	$('#p2').css({'zIndex':'10'});
+
 	$(document).on('mouseenter', function(){
 		$('#heading').html('0s & 1s');
 		var author = document.createElement('div');
@@ -62,6 +65,45 @@ $(document).ready(function(){
 
 	$('#quote').on('mouseleave', function(){
 		$('#quote').css({'color':'black'});
+	});
+
+	$('#p1').dblclick(function(){
+		var clickable=document.createElement('div');
+		var text=document.createTextNode('click me!');
+		clickable.style.position='absolute';
+		clickable.style.top='250px';
+		clickable.style.zIndex='1';
+		clickable.style.left='200px';
+		clickable.style.fontFamily='helvetica';
+		clickable.style.fontSize='16px';
+		clickable.style.fontWeight='bold';
+		clickable.appendChild(text);
+		document.body.appendChild(clickable);
+		$(clickable).on('mouseenter', function(){
+			$(clickable).css({'color':'red'});
+		});
+		$(clickable).on('mouseleave', function(){
+			$(clickable).css({'color':'black'});
+		});
+		$(clickable).click(function(){
+			var img1=document.createElement('img');
+			img1.src='vr.png';
+			img1.style.zIndex='11';
+			img1.style.position='absolute';
+			img1.style.top='400px';
+			img1.style.left='550px';
+			document.body.appendChild(img1);
+			var img2=document.createElement('img');
+			img2.src='phone.png';
+			img2.style.zIndex='11';
+			img2.style.position='absolute';
+			img2.style.top='300px';
+			img2.style.left='200px';
+			img2.style.width='300px';
+			img2.style.height='300px';
+			img2.style.transform='rotate(-10deg)';
+			document.body.appendChild(img2);
+		});
 	});
 
 
