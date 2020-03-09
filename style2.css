@@ -12,7 +12,7 @@ h3 {
 	font-weight: bold;
 	color: rgb(0,0,0);
 }
-.window, .window2, .window3 {
+.window, .window2, .window3, .window4 {
 	position: absolute;
 	z-index: 1;
 }
@@ -32,7 +32,14 @@ h3 {
 	height: 690px;
 	width: 713px;
 }
-.week1, .week2, .week3 {
+.window4 {
+	top: 151%;
+	left: 47.3%;
+	width: 849px;
+	height: 1900px;
+}
+
+.week1, .week2, .week3, .week4 {
 	position: absolute;
 	z-index: 1;
 }
@@ -51,6 +58,12 @@ h3 {
 .week3 {
 	top: 71%;
 	left: 3%;
+	height: 500px;
+	width: 630px;
+}
+.week4 {
+	top: 160%;
+	left: 52.5%;
 	height: 500px;
 	width: 630px;
 }
