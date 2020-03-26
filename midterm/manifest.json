@@ -1,0 +1,27 @@
+
+{
+
+  "manifest_version": 2,
+  "name": "extension",
+  "version": "1.0",
+
+  "description": "a parasite that __",
+
+  // "background":
+  //   {
+  //       "scripts": ["scripts/jquery.min.js", "scripts/background.js"]
+  //   },
+
+  "icons": {
+  	"48":"emoji.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.venmo.com/*"],
+      "js": ["scripts/jquery.min.js", "scripts/main.js"],
+      "css" : ["styles/style.css"]
+    }
+  ]
+
+}
