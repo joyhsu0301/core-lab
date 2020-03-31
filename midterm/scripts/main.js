@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	$('.android').remove();
 	$('.iphone').remove();
-	$('.signup-choices').remove();
+	$('.signup-choices').hide();
 	$('.announcement').remove();
 	$('.sign-in').remove();
 	$('.contact-us-nav').remove();
@@ -70,7 +70,7 @@ $(document).ready(function(){
 		$(iphone2).attr({'src':'https://i.ya-webdesign.com/images/blank-smartphone-png.png', 'srcset':'https://i.ya-webdesign.com/images/blank-smartphone-png.png'});
 		document.querySelector('.social-proof-wrapper').appendChild(iphone2);
 		
-		$(iphone2).on('mouseenter', function(){
+		$(iphone2).one('mouseenter', function(){
 		var note1=document.createElement('img');
 		note1.style.zIndex='4';
 		note1.style.position='absolute';
@@ -93,7 +93,7 @@ $(document).ready(function(){
 		$(iphone3).attr({'src':'https://d2w9rnfcy7mm78.cloudfront.net/6657974/large_65abc79f6c82625c9a44d75b1a523fc9.png?1585638214?bc=0', 'srcset':'https://d2w9rnfcy7mm78.cloudfront.net/6657974/large_65abc79f6c82625c9a44d75b1a523fc9.png?1585638214?bc=0'});
 		document.querySelector('.social-proof-wrapper').appendChild(iphone3);
 
-		$(iphone3).on('mouseenter', function(){
+		$(iphone3).one('mouseenter', function(){
 		var note2=document.createElement('img');
 		note2.style.zIndex='4';
 		note2.style.position='absolute';
@@ -105,10 +105,95 @@ $(document).ready(function(){
 			.hide()
 			.fadeIn('200');
 		document.querySelector('.social-proof-wrapper').appendChild(note2);
+
+		$(iphone3).one('click', function(){
+		var emoji=document.createElement('img');
+		emoji.zIndex='10';
+		emoji.style.position='absolute';
+		emoji.style.top='800px';
+		emoji.style.width='200px';
+		emoji.style.transform='rotate(25deg)';
+		$(emoji).attr({'src':'https://d2w9rnfcy7mm78.cloudfront.net/6659510/large_69d74e1234883eb258907dd962b8c01d.png?1585651521?bc=0','srcset':'https://d2w9rnfcy7mm78.cloudfront.net/6659510/large_69d74e1234883eb258907dd962b8c01d.png?1585651521?bc=0'});
+		document.querySelector('.social-proof-wrapper').appendChild(emoji);
+		var emoji2=document.createElement('img');
+		emoji2.zIndex='10';
+		emoji2.style.position='absolute';
+		emoji2.style.top='1000px';
+		emoji2.style.width='200px';
+		emoji2.style.transform='rotate(-25deg)';
+		$(emoji2).attr({'src':'https://d2w9rnfcy7mm78.cloudfront.net/6659510/large_69d74e1234883eb258907dd962b8c01d.png?1585651521?bc=0','srcset':'https://d2w9rnfcy7mm78.cloudfront.net/6659510/large_69d74e1234883eb258907dd962b8c01d.png?1585651521?bc=0'});
+		document.querySelector('.social-proof-wrapper').appendChild(emoji2);
+		var emoji3=document.createElement('img');
+		emoji3.zIndex='10';
+		emoji3.style.position='absolute';
+		emoji3.style.left='650px';
+		emoji3.style.top='900px';
+		emoji3.style.width='200px';
+		emoji3.style.transform='rotate(-25deg)';
+		$(emoji3).attr({'src':'https://d2w9rnfcy7mm78.cloudfront.net/6659510/large_69d74e1234883eb258907dd962b8c01d.png?1585651521?bc=0','srcset':'https://d2w9rnfcy7mm78.cloudfront.net/6659510/large_69d74e1234883eb258907dd962b8c01d.png?1585651521?bc=0'});
+		document.querySelector('.social-proof-wrapper').appendChild(emoji3);
+		var emoji4=document.createElement('img');
+		emoji4.zIndex='10';
+		emoji4.style.position='absolute';
+		emoji4.style.left='950px';
+		emoji4.style.top='900px';
+		emoji4.style.width='200px';
+		emoji4.style.transform='rotate(45deg)';
+		$(emoji4).attr({'src':'https://d2w9rnfcy7mm78.cloudfront.net/6659510/large_69d74e1234883eb258907dd962b8c01d.png?1585651521?bc=0','srcset':'https://d2w9rnfcy7mm78.cloudfront.net/6659510/large_69d74e1234883eb258907dd962b8c01d.png?1585651521?bc=0'});
+		document.querySelector('.social-proof-wrapper').appendChild(emoji4);
+		var emoji5=document.createElement('img');
+		emoji5.zIndex='10';
+		emoji5.style.position='absolute';
+		emoji5.style.left='760px';
+		emoji5.style.top='1500px';
+		emoji5.style.width='200px';
+		emoji5.style.transform='rotate(45deg)';
+		$(emoji5).attr({'src':'https://d2w9rnfcy7mm78.cloudfront.net/6659510/large_69d74e1234883eb258907dd962b8c01d.png?1585651521?bc=0','srcset':'https://d2w9rnfcy7mm78.cloudfront.net/6659510/large_69d74e1234883eb258907dd962b8c01d.png?1585651521?bc=0'});
+		document.querySelector('.social-proof-wrapper').appendChild(emoji5);
+		var emoji6=document.createElement('img');
+		emoji6.zIndex='10';
+		emoji6.style.position='absolute';
+		emoji6.style.left='300px';
+		emoji6.style.top='1250px';
+		emoji6.style.width='200px';
+		emoji6.style.transform='rotate(45deg)';
+		$(emoji6).attr({'src':'https://d2w9rnfcy7mm78.cloudfront.net/6659510/large_69d74e1234883eb258907dd962b8c01d.png?1585651521?bc=0','srcset':'https://d2w9rnfcy7mm78.cloudfront.net/6659510/large_69d74e1234883eb258907dd962b8c01d.png?1585651521?bc=0'});
+		document.querySelector('.social-proof-wrapper').appendChild(emoji6);
+		var emoji7=document.createElement('img');
+		emoji7.zIndex='10';
+		emoji7.style.position='absolute';
+		emoji7.style.left='940px';
+		emoji7.style.top='1250px';
+		emoji7.style.width='200px';
+		emoji7.style.transform='rotate(25deg)';
+		$(emoji7).attr({'src':'https://d2w9rnfcy7mm78.cloudfront.net/6659510/large_69d74e1234883eb258907dd962b8c01d.png?1585651521?bc=0','srcset':'https://d2w9rnfcy7mm78.cloudfront.net/6659510/large_69d74e1234883eb258907dd962b8c01d.png?1585651521?bc=0'});
+		document.querySelector('.social-proof-wrapper').appendChild(emoji7);
+		var emoji8=document.createElement('img');
+		emoji8.zIndex='10';
+		emoji8.style.position='absolute';
+		emoji8.style.left='990px';
+		emoji8.style.top='130px';
+		emoji8.style.width='200px';
+		emoji8.style.transform='rotate(-25deg)';
+		$(emoji8).attr({'src':'https://d2w9rnfcy7mm78.cloudfront.net/6659510/large_69d74e1234883eb258907dd962b8c01d.png?1585651521?bc=0','srcset':'https://d2w9rnfcy7mm78.cloudfront.net/6659510/large_69d74e1234883eb258907dd962b8c01d.png?1585651521?bc=0'});
+		document.querySelector('.social-proof-wrapper').appendChild(emoji8);
+		var emoji9=document.createElement('img');
+		emoji9.zIndex='10';
+		emoji9.style.position='absolute';
+		emoji9.style.left='190px';
+		emoji9.style.top='1630px';
+		emoji9.style.width='200px';
+		emoji9.style.transform='rotate(-45deg)';
+		$(emoji9).attr({'src':'https://d2w9rnfcy7mm78.cloudfront.net/6659510/large_69d74e1234883eb258907dd962b8c01d.png?1585651521?bc=0','srcset':'https://d2w9rnfcy7mm78.cloudfront.net/6659510/large_69d74e1234883eb258907dd962b8c01d.png?1585651521?bc=0'});
+		document.querySelector('.social-proof-wrapper').appendChild(emoji9);
+
+
+		});
+
 		});
 	});
 
-	$(document).on('scroll', function(){
+	$(document).one('scroll', function(){
 		$('h1').hide();
 
 		var textbox=document.createElement('h1');
@@ -142,6 +227,24 @@ $(document).ready(function(){
 			.hide()
 			.fadeIn('200');
 		document.querySelector('.headline').append(logo);
+
+		var click=document.createElement('span');
+		var clicktext=document.createTextNode('click me to hereby confirm that I have learnt these rules!');
+		click.style.position='absolute';
+		click.style.top='14px';
+		click.style.left='40px';
+		click.style.color='rgb(51,150,205)';
+		click.style.fontWeight='bold';
+		click.appendChild(clicktext);
+		document.querySelector('header').append(click);
+
+		$(click).click(function(){
+			$('.signup-choices').show();
+			$(textbox).hide();
+			$(etiquette).hide();
+			$(logo).hide();
+			$(click).remove();
+		});
 	});	
 
 });
