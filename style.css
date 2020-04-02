@@ -1,6 +1,6 @@
 body {
 	background-color: rgb(255,255,255);
-	height: 1600px;
+	height: 1900px;
 }
 h1 {
 	font-family: 'futura';
@@ -256,28 +256,28 @@ h1 {
 	display: inline-flex;
 }
 
-/* assignment 7 */
+/* in-class exercise (7) */
 .homework7 {
 	position: absolute;
-	top: 180%;
-	left: 65%;
+	top: 200%;
+	left: 45%;
 	height: 200px;
 	width: 300px;
 	z-index: 99;
 }
 .shadowh7 {
 	position: absolute;
-	top: 183%;
-	left: 63%;
+	top: 203%;
+	left: 43%;
 	height: 200px;
 	width: 300px;
-	background-color: rgb(112, 58, 15);
+	background-color: rgb(199, 194, 173);
 	z-index: 90;
 }
 .texth7 {
 	position: absolute;
-	top: 208%;
-	left: 65%;
+	top: 228%;
+	left: 45%;
 	font-family: helvetica;
 	line-height: 25pt;
 	font-size: 30pt;

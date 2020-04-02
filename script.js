@@ -86,5 +86,18 @@ $(document).ready(function(){
 		$('.disclaimer').removeClass('textshow');
 	})
 
+	//in-class exercise
+
+	$('.homework7').bind('mouseenter', function(){
+		$('.shadow').addClass('shadowh7');
+		$('.texth7').addClass('textshow');
+	})
+
+	$('.homework7').bind('mouseleave', function(){
+		$('.shadow').removeClass('shadowh7');
+		$('.texth7').removeClass('textshow');
+		$('.disclaimer').removeClass('textshow');
+	})
+
 
 });
