@@ -72,5 +72,19 @@ $(document).ready(function(){
 		$('.texth5').removeClass('textshow');
 	})
 
+	//midterm
+
+	$('.midterm').bind('mouseenter', function(){
+		$('.shadow').addClass('shadowh6');
+		$('.texth6').addClass('textshow');
+		$('.disclaimer').addClass('textshow');
+	})
+
+	$('.midterm').bind('mouseleave', function(){
+		$('.shadow').removeClass('shadowh6');
+		$('.texth6').removeClass('textshow');
+		$('.disclaimer').removeClass('textshow');
+	})
+
 
 });

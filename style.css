@@ -1,6 +1,6 @@
 body {
 	background-color: rgb(255,255,255);
-	height: 1500px;
+	height: 1600px;
 }
 h1 {
 	font-family: 'futura';
@@ -12,12 +12,12 @@ h1 {
 }
 
 .fname {
-	position: absolute;
+	position: fixed;
 	top: 0%;
-	left: 10%;
+	left: 11%;
 }
 .lname {
-	position: absolute;
+	position: fixed;
 	top: 12%;
 	left: 14.5%;
 }
@@ -58,7 +58,7 @@ h1 {
 .homework {
 	position: absolute;
 	top: 40%;
-	left: 45%;
+	left: 43%;
 	height: 200px;
 	width: 300px;
 	z-index: 99;
@@ -67,7 +67,7 @@ h1 {
 .shadowh {
 	position: absolute;
 	top: 43%;
-	left: 43%;
+	left: 41%;
 	height: 200px;
 	width: 300px;
 	background-color: rgb(71, 71, 71);
@@ -76,7 +76,7 @@ h1 {
 .texth {
 	position: absolute;
 	top: 67%;
-	left: 45%;
+	left: 43%;
 	font-family: helvetica;
 	font-size: 30pt;
 	z-index: 100;
@@ -213,5 +213,48 @@ h1 {
 .textshow {
 	display: inline-flex;
 }
+
+/* midterm */
+.midterm {
+	position: absolute;
+	top: 160%;
+	left: 10%;
+	height: 200px;
+	width: 300px;
+	z-index: 99;
+}
+.shadowh6 {
+	position: absolute;
+	top: 163%;
+	left: 8%;
+	height: 200px;
+	width: 300px;
+	background-color: rgb(59, 101, 107);
+	z-index: 90;
+}
+.texth6 {
+	position: absolute;
+	top: 188%;
+	left: 10%;
+	font-family: helvetica;
+	line-height: 25pt;
+	font-size: 30pt;
+	z-index: 100;
+	display: none;
+}
+.disclaimer {
+	position: absolute;
+	top: 198%;
+	left: 10%;
+	font-family: helvetica;
+	font-size: 15pt;
+	z-index: 100;
+	color: rgb(59, 101, 107);
+	display: none;
+}
+.textshow {
+	display: inline-flex;
+}
+
 
 
