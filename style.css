@@ -256,5 +256,37 @@ h1 {
 	display: inline-flex;
 }
 
+/* assignment 7 */
+.homework7 {
+	position: absolute;
+	top: 180%;
+	left: 65%;
+	height: 200px;
+	width: 300px;
+	z-index: 99;
+}
+.shadowh7 {
+	position: absolute;
+	top: 183%;
+	left: 63%;
+	height: 200px;
+	width: 300px;
+	background-color: rgb(112, 58, 15);
+	z-index: 90;
+}
+.texth7 {
+	position: absolute;
+	top: 208%;
+	left: 65%;
+	font-family: helvetica;
+	line-height: 25pt;
+	font-size: 30pt;
+	z-index: 100;
+	display: none;
+}
+.textshow {
+	display: inline-flex;
+}
+
 
 
