@@ -4,25 +4,29 @@ $(document).ready(function(){
 		{
 			'name': 'Beijing home',
 			'color': 'brown',
-			'shape': ''
+			'shape': '',
+			'image': ''
 		},
 
 		{
 			'name': 'Taipei home',
 			'color': 'red',
-			'shape': ''
+			'shape': '',
+			'image': ''
 		},
 
 		{
 			'name': 'New York home',
 			'color': 'beige',
-			'shape': ''
+			'shape': '',
+			'image': ''
 		},
 
 		{
 			'name': 'kindergarten',
 			'color': 'baby blue',
-			'shape': ''
+			'shape': '',
+			'image': ''
 		}
 	]
 
@@ -36,5 +40,11 @@ $(document).ready(function(){
 	$('#boxlid').on('mouseleave', function(){
 		$('#title').css({'color': 'black'});
 	});
+
+	//code for creating the circles
+	var items = ['scent1', 'scent2', 'scent3', 'scent4', 'scent5', 'scent6'] 
+	for(i=0; i<items.length; i++){
+		$('#items').append('<div class="scents"></div>')
+	}
 
 });

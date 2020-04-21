@@ -1,3 +1,4 @@
+/*The structure of the box*/
 #boxbody, #boxlid {
 	background-color: rgb(107, 67, 3);
 	position: absolute; 
@@ -13,15 +14,6 @@
 }
 #boxlid {
 	z-index: 20;
-}
-#boxinside {
-	position: relative;
-	top: 30px;
-	left: 0px;
-	width: 320px;
-	height: 270px;
-	background-color: rgb(212, 160, 78);
-	z-index: 11;
 }
 #boxlidshow {
 	position: relative;
@@ -39,5 +31,25 @@
 	font-family: 'helvetica';
 	font-weight: bold;
 	font-size: 30px;
+}
 
+/*The interior of the box*/
+#boxinside {
+	position: relative;
+	top: 30px;
+	left: 0px;
+	width: 320px;
+	height: 270px;
+	background-color: rgb(212, 160, 78);
+	z-index: 11;
+}
+#items {
+	display: flex;
+	flex-flow: wrap;
+}
+.scents {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background-color: lightblue;
 }
