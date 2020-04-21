@@ -1,0 +1,43 @@
+#boxbody, #boxlid {
+	background-color: rgb(107, 67, 3);
+	position: absolute; 
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	width: 350px;
+	height: 300px;
+}
+#boxbody {
+	z-index: 10;
+}
+#boxlid {
+	z-index: 20;
+}
+#boxinside {
+	position: relative;
+	top: 30px;
+	left: 0px;
+	width: 320px;
+	height: 270px;
+	background-color: rgb(212, 160, 78);
+	z-index: 11;
+}
+#boxlidshow {
+	position: relative;
+	bottom: 380px;
+	left: 26px;
+	width: 350px;
+	height: 110px;
+	background-color: rgb(107, 67, 3);
+	transform: skewX(-25deg);
+}
+#title {
+	position: relative;
+	top: 140px;
+	left: 30px;
+	font-family: 'helvetica';
+	font-weight: bold;
+	font-size: 30px;
+
+}
