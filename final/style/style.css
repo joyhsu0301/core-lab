@@ -1,7 +1,25 @@
+body {
+	overflow: hidden;
+}
+h1, p {
+	font-family: 'helvetica';
+	font-weight: bold;
+	font-size: 30px;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 /*The structure of the box*/
 #boxbody, #boxlid {
 	background-color: rgb(99, 59, 24);
-	position: absolute; 
+	position: fixed; 
 	top: 50%;
 	left: 50%;
 	margin-right: -50%;
@@ -28,9 +46,6 @@
 	position: relative;
 	top: 140px;
 	left: 30px;
-	font-family: 'helvetica';
-	font-weight: bold;
-	font-size: 30px;
 }
 
 /*The interior of the box*/
@@ -40,23 +55,86 @@
 	left: 25px;
 	width: 300px;
 	height: 250px;
-	background-color: rgb(140, 87, 36);
+	background-color: rgb(128, 77, 47);
 	z-index: 11;
 }
 #items {
-	position: absolute;
-	top: 40px;
-	left: 10px;
+	position: absolute; 
+	top: 33%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 80px;
 	display: flex;
 	flex-flow: wrap;
+	z-index: 12;
 }
 .scents {
-	width: 50px;
-	height: 50px;
-	border-radius: 25px;
-	background-color: lightblue;
-	margin: 20px;
+	width: 100px;
+	height: 200px;
+	padding: 10px
+	margin-bottom: 100px;
+	margin-top: 100px;
 }
 .scents:hover {
-	background-color: darkblue;
+	background-color: blue;
 }
+.vials {
+	width: 100px;
+	height: 200px;
+}
+
+/*clickable text*/
+#title2 {
+	position: fixed;
+	bottom: -10px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+}
+#more_scroll {
+	position: fixed;
+	top: 45%;
+	right: 0px;
+	transform: rotate(-90deg);
+	display: none;
+}
+#more_scroll:hover {
+	color: blue;
+}
+#sort_filter {
+	position: fixed;
+	top: 43%;
+	left: 0px;
+	transform: rotate(90deg);
+	display: none;
+	z-index: 20;
+}
+#sort_filter:hover {
+	color: blue;
+}
+#less {
+	position: fixed;
+	top: 45%;
+	right: 9px;
+	transform: rotate(-90deg);
+	display: none;
+}
+#less:hover {
+	color: blue;
+}
+
+/* show more */
+
+
+/* sort by */
+
+
+
+
+
+
+
+
+
