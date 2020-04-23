@@ -5,6 +5,7 @@ $(document).ready(function(){
 			'name': 'Beijing home',
 			'color': 'brown',
 			'shape': '',
+			'feeling': 'nostalgia',
 			'image': ''
 		},
 
@@ -12,6 +13,7 @@ $(document).ready(function(){
 			'name': 'Taipei home',
 			'color': 'red',
 			'shape': '',
+			'feeling': '',
 			'image': ''
 		},
 
@@ -19,13 +21,39 @@ $(document).ready(function(){
 			'name': 'New York home',
 			'color': 'beige',
 			'shape': '',
+			'feeling': '',
 			'image': ''
 		},
 
 		{
 			'name': 'kindergarten',
-			'color': 'baby blue',
+			'color': 'lightblue',
 			'shape': '',
+			'feeling': 'nostalgia',
+			'image': ''
+		},
+
+		{
+			'name': 'home clothes',
+			'color': 'grey',
+			'shape': '',
+			'feeling': '',
+			'image': ''
+		},
+
+		{
+			'name': 'grandmas house',
+			'color': 'green',
+			'shape': '',
+			'feeling': 'nostalgia',
+			'image': ''
+		},
+
+		{
+			'name': 'haneda airport',
+			'color': 'white',
+			'shape': '',
+			'feeling': 'nostalgia',
 			'image': ''
 		}
 	]
@@ -34,6 +62,7 @@ $(document).ready(function(){
 		$('#boxlid').css({'display': 'none'});
 		$('#boxbody').append('<div id="boxlidshow"></div>');
 	});
+
 	$('#boxlid').on('mouseenter', function(){
 		$('#title').css({'color': 'white'});
 	});
@@ -42,9 +71,10 @@ $(document).ready(function(){
 	});
 
 	//code for creating the circles
-	var items = ['scent1', 'scent2', 'scent3', 'scent4', 'scent5', 'scent6'] 
-	for(i=0; i<items.length; i++){
+	for(i=0; i<6; i++){
 		$('#items').append('<div class="scents"></div>')
 	}
+
+
 
 });

@@ -1,6 +1,6 @@
 /*The structure of the box*/
 #boxbody, #boxlid {
-	background-color: rgb(107, 67, 3);
+	background-color: rgb(99, 59, 24);
 	position: absolute; 
 	top: 50%;
 	left: 50%;
@@ -17,11 +17,11 @@
 }
 #boxlidshow {
 	position: relative;
-	bottom: 380px;
+	bottom: 360px;
 	left: 26px;
 	width: 350px;
 	height: 110px;
-	background-color: rgb(107, 67, 3);
+	background-color: rgb(99, 59, 24);
 	transform: skewX(-25deg);
 }
 #title {
@@ -36,14 +36,17 @@
 /*The interior of the box*/
 #boxinside {
 	position: relative;
-	top: 30px;
-	left: 0px;
-	width: 320px;
-	height: 270px;
-	background-color: rgb(212, 160, 78);
+	top: 25px;
+	left: 25px;
+	width: 300px;
+	height: 250px;
+	background-color: rgb(140, 87, 36);
 	z-index: 11;
 }
 #items {
+	position: absolute;
+	top: 40px;
+	left: 10px;
 	display: flex;
 	flex-flow: wrap;
 }
@@ -52,4 +55,8 @@
 	height: 50px;
 	border-radius: 25px;
 	background-color: lightblue;
+	margin: 20px;
+}
+.scents:hover {
+	background-color: darkblue;
 }

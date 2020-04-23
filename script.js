@@ -99,5 +99,30 @@ $(document).ready(function(){
 		$('.disclaimer').removeClass('textshow');
 	})
 
+	//final
+
+	$('.final').bind('mouseenter', function(){
+		$('.shadow').addClass('shadowh8');
+		$('.texth8').addClass('textshow');
+	})
+
+	$('.final').bind('mouseleave', function(){
+		$('.shadow').removeClass('shadowh8');
+		$('.texth8').removeClass('textshow');
+	})
+
+	//in-class exercise - lab
+
+	$('.homework9').bind('mouseenter', function(){
+		$('.shadow').addClass('shadowh9');
+		$('.texth9').addClass('textshow');
+	})
+
+	$('.homework9').bind('mouseleave', function(){
+		$('.shadow').removeClass('shadowh9');
+		$('.texth9').removeClass('textshow');
+		$('.disclaimer').removeClass('textshow');
+	})
+
 
 });
