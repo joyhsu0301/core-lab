@@ -92,7 +92,7 @@ $(document).ready(function(){
 
 		{
 			'name': 'Temple Incense',
-			'color': 'dark red',
+			'color': 'darkred',
 			'shape': '',
 			'feeling': '',
 			'image': ''
@@ -100,7 +100,7 @@ $(document).ready(function(){
 
 		{
 			'name': 'Onsen',
-			'color': 'clear',
+			'color': 'yellow',
 			'shape': '',
 			'feeling': '',
 			'image': ''
@@ -108,7 +108,7 @@ $(document).ready(function(){
 
 		{
 			'name': 'Dads Car',
-			'color': 'champagne',
+			'color': 'yellow',
 			'shape': '',
 			'feeling': 'nostalgia',
 			'image': ''
@@ -140,7 +140,7 @@ $(document).ready(function(){
 
 		{
 			'name': 'NYC streets during summertime',
-			'color': 'black',
+			'color': 'brown',
 			'shape': '',
 			'feeling': '',
 			'image': ''
@@ -203,7 +203,7 @@ $(document).ready(function(){
 		},
 
 		{
-			'name': 'Shaksuka',
+			'name': 'Shakshuka',
 			'color': 'red',
 			'shape': '',
 			'feeling': '',
@@ -268,14 +268,26 @@ $(document).ready(function(){
 	});
 
 	//code for first 3 vials selected randomly
-	for(i=0; i<scents[3]; i++){
-		$('#items').append('<img src="images/vial.png" class="scents">')
+	for(i=0; i<3; i++){
+		var randomScent = scents[Math.floor(Math.random()*scents.length)];
+		var scentsDiv = $('<div/>', {'class': 'scents'})
+		.data('randomscent', randomScent)
+		.append('<img src="images/vial.png" class="vials">')
+		.on('mouseenter', function(){
+			console.log($(this).data("randomscent").name);
+			$('body').css({'background-color': $(this).data("randomscent").color});
+			$('body').append('<h1 id="scent_name" style="display: inline;">' + $(this).data("randomscent").name + '</h1>');
+		})
+		.on('mouseleave', function(){
+			$('#scent_name').remove();
+		});
+		$('#random_items').append(scentsDiv);
 	}
 
 	//sort by 
 	$('#sort_filter').click(function(){
 
-	})
+	});
 
 	//more 
 	$('#more_scroll').click(function(){
@@ -284,26 +296,29 @@ $(document).ready(function(){
 		for(i=0; i<scents.length; i++){
 			var scentsDiv = $('<div/>', {'class': 'scents'})
 			.data('scents', scents[i])
-			.append('<img src="images/vial.png" class="vials">');
+			.append('<img src="images/vial.png" class="vials">')
+			.on('mouseenter', function(){
+				$('body').css({'background-color': $(this).data("scents").color});
+				console.log($(this).data("scents").name);
+				$('body').append('<h1 id="scent_name" style="display: inline;">' + $(this).data("scents").name + '</h1>');
+			})
+			.on('mouseleave', function(){
+				$('#scent_name').remove();
+			});
 			$('#items').append(scentsDiv);
 		}
 		$('#more_scroll').css({'display':'none'});
 		$('#less').css({'display':'inline', 'opacity': '1', 'animation-name': 'fadeInOpacity','animation-iteration-count': '1','animation-timing-function': 'ease-in','animation-duration': '0.75s'});
+		$('#items').css({'display':'flex'});
 	});
 
 	//less 
 	$('#less').click(function(){
 		$('#less').css({'display':'none'});
 		$('#more_scroll').css({'display':'inline'});
+		$('#items').css({'display':'none'});
+		$('#boxlidshow').css({'display': 'block'});
 	});
 
-	//objects 
-	$('.scents').on('mouseenter', function(){
-		$('body').css({'background-color': scents[i].color});
-		console.log(scents[i].name);
-	});
-	$('.scents').on('mouseleave', function(){
-		$('body').css({'background-color':'white'});
-	});
 
 });
