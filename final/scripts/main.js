@@ -337,10 +337,38 @@ $(document).ready(function(){
 	// }
 
 	//sort by 
-	$('#sort_filter').click(function(){
+	$('#sort_filter').data('clicked', false).click(function(){
+		if($(this).data('clicked') === false) {
+			for(i=0; i<scents.length; i++){
+				var scentsDiv = $('<div/>', {'class': 'scents'})
+				.data('scents', scents[i])
+				.append('<img src="images/vial.png" class="vials">')
+				.on('mouseenter', function(){
+					$('body').css({'background-color': $(this).data("scents").color});
+					console.log($(this).data("scents").name);
+					$('body').append('<h1 id="scent_name" style="display: inline; left: 60%;">' + $(this).data("scents").name + '</h1>');
+				})
+				.on('mouseleave', function(){
+					$('#scent_name').remove();
+				});
+				$('#grid_items').append(scentsDiv);
+				$(this).data('clicked', true);
+			}
+		} else{
+			$('body').css({'background-color':'white'});
+		}
+		$('body').css({'overflow-y':'visible'});
+		$('#title2').css({'display': 'none'});
+		$('body').css({'background-color': 'white'});
+		$('#items').css({'display':'none'});
+		$('#random_items').css({'display':'none'});
+		$('#grid_items').css({'display':'flex'});
+		$('#more_scroll').css({'display': 'none'});
+		$('#less').css({'display': 'none'});
 		$('.sidenav').css({'width':'300px'});
 		$('#sort_filter').css({'display': 'none'});
 	});
+
 	$('#close').click(function(){
 		$('.sidenav').css({'width':'0px'});
 		$('#sort_filter').css({'display': 'inline'});
@@ -351,76 +379,39 @@ $(document).ready(function(){
 	});
 
 	//filter
-	$('#color_click').click(function(){
-		$('body').css({'background-color': 'white'});
-		$('#items').css({'display':'none'});
-		$('#random_items').css({'display':'none'});
-		$('#grid_items').css({'display':'flex'});
-		$('#more_scroll').css({'display': 'none'});
-		$('#less').css({'display': 'none'});
-		for(i=0; i<scents.length; i++){
-			var scentsDiv = $('<div/>', {'class': 'scents'})
-			.data('scents', scents[i])
-			.append('<img src="images/vial.png" class="vials">')
-			.on('mouseenter', function(){
-				$('body').css({'background-color': $(this).data("scents").color});
-				console.log($(this).data("scents").name);
-				$('body').append('<h1 id="scent_name" style="display: inline; left: 60%;">' + $(this).data("scents").name + '</h1>');
-			})
-			.on('mouseleave', function(){
-				$('#scent_name').remove();
-			});
-			$('#grid_items').append(scentsDiv);
-		}
-		$('body').css({'overflow-y':'visible'});
-		$('#title2').css({'display': 'none'});
+	$('#color_click').data('clicked', false).click(function(){
+
 	});
-	$('#feeling_click').click(function(){
-		$('body').css({'background-color': 'white'});
-		$('#items').css({'display':'none'});
-		$('#random_items').css({'display':'none'});
-		$('#grid_items').css({'display':'flex'});
-		$('#more_scroll').css({'display': 'none'});
-		$('#less').css({'display': 'none'});
-		$('body').css({'overflow-y':'visible'});
-		$('#title2').css({'display': 'none'});
-		for(i=0; i<scents.length; i++){
-			var scentsDiv = $('<div/>', {'class': 'scents'})
-			.data('scents', scents[i])
-			.append('<img src="images/vial.png" class="vials">')
-			.on('mouseenter', function(){
-				$('body').css({'background-color': $(this).data("scents").color});
-				console.log($(this).data("scents").name);
-				$('body').append('<h1 id="scent_name" style="display: inline; left: 60%;">' + $(this).data("scents").name + '</h1>');
-			})
-			.on('mouseleave', function(){
-				$('#scent_name').remove();
-			});
-			$('#grid_items').append(scentsDiv);
-		}
+
+	$('#feeling_click').data('clicked', false).click(function(){
 	});
 
 	//more 
-	$('#more_scroll').click(function(){
-		$('#random_items').css({'display': 'none'});
-		$('body').css({'overflow': 'visible'});
-		for(i=0; i<scents.length; i++){
-			var scentsDiv = $('<div/>', {'class': 'scents'})
-			.data('scents', scents[i])
-			.append('<img src="images/vial.png" class="vials">')
-			.on('mouseenter', function(){
-				$('body').css({'background-color': $(this).data("scents").color});
-				console.log($(this).data("scents").name);
-				$('body').append('<h1 id="scent_name" style="display: inline;">' + $(this).data("scents").name + '</h1>');
-			})
-			.on('mouseleave', function(){
-				$('#scent_name').remove();
-			});
-			$('#items').append(scentsDiv);
+	$('#more_scroll').data('clicked', false).click(function(){
+		if($(this).data('clicked') === false) {
+			for(i=0; i<scents.length; i++){
+				var scentsDiv = $('<div/>', {'class': 'scents'})
+				.data('scents', scents[i])
+				.append('<img src="images/vial.png" class="vials">')
+				.on('mouseenter', function(){
+					$('body').css({'background-color': $(this).data("scents").color});
+					console.log($(this).data("scents").name);
+					$('body').append('<h1 id="scent_name" style="display: inline;">' + $(this).data("scents").name + '</h1>');
+				})
+				.on('mouseleave', function(){
+					$('#scent_name').remove();
+				});
+				$('#items').append(scentsDiv);
+				$(this).data('clicked', true);
+			}
+		} else{
+			$('body').css({'background-color':'white'});
 		}
 		$('#more_scroll').css({'display':'none'});
 		$('#less').css({'display':'inline', 'opacity': '1', 'animation-name': 'fadeInOpacity','animation-iteration-count': '1','animation-timing-function': 'ease-in','animation-duration': '0.75s'});
 		$('#items').css({'display':'flex'});
+		$('#random_items').css({'display': 'none'});
+		$('body').css({'overflow': 'visible'});
 	});
 
 	//less 
