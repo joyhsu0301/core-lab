@@ -17,7 +17,7 @@ h1, p {
 }
 
 /*The structure of the box*/
-#boxbody, #boxlid {
+#boxlid {
 	background-color: rgb(99, 59, 24);
 	position: fixed; 
 	top: 50%;
@@ -26,21 +26,7 @@ h1, p {
 	transform: translate(-50%, -50%);
 	width: 350px;
 	height: 300px;
-}
-#boxbody {
-	z-index: 10;
-}
-#boxlid {
 	z-index: 20;
-}
-#boxlidshow {
-	position: relative;
-	bottom: 360px;
-	left: 26px;
-	width: 350px;
-	height: 110px;
-	background-color: rgb(99, 59, 24);
-	transform: skewX(-25deg);
 }
 #title {
 	position: relative;
@@ -54,6 +40,8 @@ h1, p {
 	transform: translate(-50%, -50%);
 	display: none;
 }
+
+/*changing scent names*/
 #scent_name {
 	position: fixed;
 	top: 30px;
@@ -62,19 +50,10 @@ h1, p {
 	display: none;
 }
 
-/*The interior of the box*/
-#boxinside {
-	position: relative;
-	top: 25px;
-	left: 25px;
-	width: 300px;
-	height: 250px;
-	background-color: rgb(128, 77, 47);
-	z-index: 11;
-}
+/*flexbox containers*/
 #items, #random_items {
 	position: absolute; 
-	top: 33%;
+	top: 29%;
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
@@ -84,6 +63,16 @@ h1, p {
 	flex-flow: wrap;
 	z-index: 12;
 }
+#grid_items {
+	position: absolute;
+	left: 370px;
+	width: 75%;
+	display: flex;
+	flex-flow: wrap;
+	z-index: 12;
+}
+
+/*flexbox children */
 .scents {
 	width: 100px;
 	height: 200px;
@@ -132,15 +121,36 @@ h1, p {
 	color: blue;
 }
 
-/* sort by */
+/*sort by navigation bar*/
 .sidenav {
 	left: 0px;
 	top: 0px;
 	height: 100%;
+	width: 0;
 	position: fixed;
 	overflow-x: hidden;
 	transition: all 0.5s ease;
-	background-color: rgb(); 
+	background-color: rgb(0,0,0); 
+}
+#color_click, #feeling_click {
+	padding: 20px;
+	margin: 10px;
+	position: relative;
+	top: 250px;
+	color: rgb(255,255,255);
+	z-index: 100;
+}
+#color_click:hover, #feeling_click:hover {
+	color: blue;
+}
+#close {
+	position: absolute;
+	top: 0px;
+	left: 250px;
+	color: rgb(255,255,255);
+}
+#close:hover {
+	color: red;
 }
 
 
