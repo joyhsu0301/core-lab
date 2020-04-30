@@ -2,12 +2,14 @@ body {
 	overflow: hidden;
 	cursor: default;
 }
-h1, p, span {
+h1, p {
 	font-family: 'helvetica';
 	font-weight: bold;
 	font-size: 30px;
 }
-
+span {
+	font-size: 30px;
+}
 
 @keyframes fadeInOpacity {
 	0% {
@@ -65,13 +67,19 @@ h1, p, span {
 	flex-flow: wrap;
 	z-index: 12;
 }
-#grid_items, #color_items {
+#grid_items {
 	position: absolute;
 	left: 370px;
 	width: 75%;
 	display: flex;
 	flex-flow: wrap;
 	z-index: 12;
+}
+#color_items {
+	position: absolute;
+	left: 60%;
+	top: 50%;
+	display: none;
 }
 
 /*flexbox children */

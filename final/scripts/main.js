@@ -256,59 +256,69 @@ $(document).ready(function(){
 
 	]
 
-	var colors = [
-		{
-			'name': 'R',
-			'image': ''
-		},
+	// var colors = [
+	// 	{
+	// 		'name': 'REDs',
+	// 		'image': ''
+	// 	},
 
-		{
-			'name': 'O',
-			'image': ''
-		},
+	// 	{
+	// 		'name': 'YELLOWs',
+	// 		'image': ''
+	// 	},
 
-		{
-			'name': 'Y',
-			'image': ''
-		},
+	// 	{
+	// 		'name': 'GREENs',
+	// 		'image': ''
+	// 	},
 
-		{
-			'name': 'G',
-			'image': ''
-		},
+	// 	{
+	// 		'name': 'BLUEs',
+	// 		'image': ''
+	// 	},
 
-		{
-			'name': 'B',
-			'image': ''
-		},
+	// 	{
+	// 		'name': 'PURPLEs',
+	// 		'image': ''
+	// 	},
 
-		{
-			'name': 'I',
-			'image': ''
-		},
+	// 	{
+	// 		'name': 'PINKs',
+	// 		'image': ''
+	// 	},
 
-		{
-			'name': 'V',
-			'image': ''
-		}
+	// 	{
+	// 		'name': 'GRAYs',
+	// 		'image': ''
+	// 	},
+
+	// 	{
+	// 		'name': 'BROWNs',
+	// 		'image': ''
+	// 	},
+
+	// 	{
+	// 		'name': 'WHITEs',
+	// 		'image': ''
+	// 	}
 
 
-	]
+	// ]
 
-	var feelings = [
-		{
+	// var feelings = [
+	// 	{
 
-		},
+	// 	},
 
-		{
+	// 	{
 
-		},
+	// 	},
 
-		{
+	// 	{
 
-		},
+	// 	},
 
-	]
+	// ]
 
 	$('#boxlid').click(function(){
 		$('#boxlid').css({'display': 'none'});
@@ -371,7 +381,7 @@ $(document).ready(function(){
 		$('body').css({'background-color': 'white'});
 		$('#items').css({'display':'none'});
 		$('#random_items').css({'display':'none'});
-		$('#grid_items').css({'display':'flex'});
+		$('#grid_items').css({'display':'flex', 'width': '75%', 'left': '370px'});
 		$('#more_scroll').css({'display': 'none'});
 		$('#less').css({'display': 'none'});
 		$('.sidenav').css({'width':'300px'});
@@ -385,14 +395,14 @@ $(document).ready(function(){
 		$('#random_items').css({'display': 'flex'});
 		$('#more_scroll').css({'display': 'inline'});
 		$('#title2').css({'display': 'inline'});
+		$('#color_items').css({'display': 'none'});
 	});
 
 	//filter
 	$('#color_click').data('clicked', false).click(function(){
 		$('body').css({'background-color': 'white'});
 		$('#grid_items').css({'display': 'none'});
-		$('#color_items').css({'display': 'flex'});
-
+		$('#color_items').css({'display': 'inline'});
 	});
 
 	$('#feeling_click').data('clicked', false).click(function(){
