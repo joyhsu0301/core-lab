@@ -329,9 +329,10 @@ $(document).ready(function(){
 
 	for(i=0; i<3; i++){
 		var randomScent = scentsCopy[Math.floor(Math.random()*scentsCopy.length)];
-		scentsCopy.splice(randomScent, 1);
+		var index = scentsCopy.indexOf(randomScent);
+		scentsCopy.splice(index, 1);
 		var scentDiv = $('<div/>', {'class': 'scents'})
-		.data('randomscent', scentsCopy)
+		.data('randomscent', randomScent)
 		.append('<img src="images/vial.png" class="vials">')
 		.on('mouseenter', function(){
 			console.log($(this).data("randomscent").name);
