@@ -4,7 +4,6 @@ $(document).ready(function(){
 		{
 			'name': 'Beijing Home',
 			'color': 'peru',
-			'shape': '',
 			'feeling': 'nostalgia',
 			'image': ''
 		},
@@ -12,7 +11,6 @@ $(document).ready(function(){
 		{
 			'name': 'Taipei Home',
 			'color': 'blanchedalmond',
-			'shape': '',
 			'feeling': 'vacation',
 			'image': ''
 		},
@@ -20,7 +18,6 @@ $(document).ready(function(){
 		{
 			'name': 'New York Home',
 			'color': 'beige',
-			'shape': '',
 			'feeling': 'comfort',
 			'image': ''
 		},
@@ -28,7 +25,6 @@ $(document).ready(function(){
 		{
 			'name': 'Grandmas House',
 			'color': 'sienna',
-			'shape': '',
 			'feeling': 'nostalgia',
 			'image': ''
 		},
@@ -36,7 +32,6 @@ $(document).ready(function(){
 		{
 			'name': 'Junyis House',
 			'color': 'cornsilk',
-			'shape': '',
 			'feeling': 'happy',
 			'image': ''
 		},
@@ -44,7 +39,6 @@ $(document).ready(function(){
 		{
 			'name': 'Kindergarten',
 			'color': 'lightblue',
-			'shape': '',
 			'feeling': 'nostalgia',
 			'image': ''
 		},
@@ -52,7 +46,6 @@ $(document).ready(function(){
 		{
 			'name': 'Home Clothes',
 			'color': 'palevioletred',
-			'shape': '',
 			'feeling': 'comfort',
 			'image': ''
 		},
@@ -60,7 +53,6 @@ $(document).ready(function(){
 		{
 			'name': 'Haneda Airport',
 			'color': 'white',
-			'shape': '',
 			'feeling': 'nostalgia',
 			'image': ''
 		},
@@ -68,7 +60,6 @@ $(document).ready(function(){
 		{
 			'name': 'JFK Airport',
 			'color': 'white',
-			'shape': '',
 			'feeling': 'sad',
 			'image': ''
 		},
@@ -77,7 +68,6 @@ $(document).ready(function(){
 		{
 			'name': 'Color Pencils',
 			'color': 'darkred',
-			'shape': '',
 			'feeling': 'nostalgia',
 			'image': ''
 		},
@@ -85,7 +75,6 @@ $(document).ready(function(){
 		{
 			'name': '7-Eleven',
 			'color': 'green',
-			'shape': '',
 			'feeling': 'otherworldly',
 			'image': ''
 		},
@@ -93,7 +82,6 @@ $(document).ready(function(){
 		{
 			'name': 'Temple Incense',
 			'color': 'darkred',
-			'shape': '',
 			'feeling': 'otherworldly',
 			'image': ''
 		},
@@ -101,7 +89,6 @@ $(document).ready(function(){
 		{
 			'name': 'Onsen',
 			'color': 'lightyellow',
-			'shape': '',
 			'feeling': 'relaxed',
 			'image': ''
 		},
@@ -109,7 +96,6 @@ $(document).ready(function(){
 		{
 			'name': 'Dads Car',
 			'color': 'blanchedalmond',
-			'shape': '',
 			'feeling': 'nostalgia',
 			'image': ''
 		},
@@ -117,7 +103,6 @@ $(document).ready(function(){
 		{
 			'name': 'Cardboard',
 			'color': 'peru',
-			'shape': '',
 			'feeling': 'nostalgia',
 			'image': ''
 		},
@@ -125,7 +110,6 @@ $(document).ready(function(){
 		{
 			'name': 'Manga Collection',
 			'color': 'lightgray',
-			'shape': '',
 			'feeling': 'comfort',
 			'image': ''
 		},
@@ -133,7 +117,6 @@ $(document).ready(function(){
 		{
 			'name': 'Swimming Pool',
 			'color': 'deepskyblue',
-			'shape': '',
 			'feeling': 'vacation',
 			'image': ''
 		},
@@ -141,7 +124,6 @@ $(document).ready(function(){
 		{
 			'name': 'NYC streets',
 			'color': 'darkslategray',
-			'shape': '',
 			'feeling': 'gross',
 			'image': ''
 		},
@@ -149,7 +131,6 @@ $(document).ready(function(){
 		{
 			'name': 'Chinese New Years Dinner',
 			'color': 'crimson',
-			'shape': '',
 			'feeling': 'comfort',
 			'image': ''
 		},
@@ -157,7 +138,6 @@ $(document).ready(function(){
 		{
 			'name': 'Bamboo Forest',
 			'color': 'limegreen',
-			'shape': '',
 			'feeling': 'relaxed',
 			'image': ''
 		},
@@ -165,7 +145,6 @@ $(document).ready(function(){
 		{
 			'name': 'Tatami',
 			'color': 'limegreen',
-			'shape': '',
 			'feeling': 'comfort',
 			'image': ''
 		},
@@ -173,7 +152,6 @@ $(document).ready(function(){
 		{
 			'name': 'My Wallet',
 			'color': 'saddlebrown',
-			'shape': '',
 			'feeling': 'comfort',
 			'image': ''
 		},
@@ -181,7 +159,6 @@ $(document).ready(function(){
 		{
 			'name': 'Warm Souffle',
 			'color': 'burlywood',
-			'shape': '',
 			'feeling': 'happy',
 			'image': ''
 		},
@@ -189,7 +166,6 @@ $(document).ready(function(){
 		{
 			'name': 'Takeout Thai Food',
 			'color': 'limegreen',
-			'shape': '',
 			'feeling': 'hungry',
 			'image': ''
 		},
@@ -197,7 +173,6 @@ $(document).ready(function(){
 		{
 			'name': 'Makeup',
 			'color': 'dimgray',
-			'shape': '',
 			'feeling': 'sad',
 			'image': ''
 		},
@@ -205,7 +180,6 @@ $(document).ready(function(){
 		{
 			'name': 'Shakshuka',
 			'color': 'firebrick',
-			'shape': '',
 			'feeling': 'hungry',
 			'image': ''
 		},
@@ -213,7 +187,6 @@ $(document).ready(function(){
 		{
 			'name': 'Mom',
 			'color': 'purple',
-			'shape': '',
 			'feeling': 'comfort',
 			'image': ''
 		},
@@ -221,7 +194,6 @@ $(document).ready(function(){
 		{
 			'name': 'Dad',
 			'color': 'darkseagreen',
-			'shape': '',
 			'feeling': 'comfort',
 			'image': ''
 		},
@@ -229,7 +201,6 @@ $(document).ready(function(){
 		{
 			'name': 'Cigarettes',
 			'color': 'gray',
-			'shape': '',
 			'feeling': 'relaxed',
 			'image': ''
 		},
@@ -237,7 +208,6 @@ $(document).ready(function(){
 		{
 			'name': 'Vodka',
 			'color': 'white',
-			'shape': '',
 			'feeling': 'gross',
 			'image': ''
 		},
@@ -245,7 +215,6 @@ $(document).ready(function(){
 		{
 			'name': 'Favorite Hand Soap',
 			'color': 'white',
-			'shape': '',
 			'feeling': 'nostalgia',
 			'image': ''
 		},
@@ -253,7 +222,6 @@ $(document).ready(function(){
 		{
 			'name': 'Aesop Hand Cream',
 			'color': 'green',
-			'shape': '',
 			'feeling': 'happy',
 			'image': ''
 		}, 
@@ -261,7 +229,6 @@ $(document).ready(function(){
 		{
 			'name': '75% Alcohol Spray',
 			'color': 'white',
-			'shape': '',
 			'feeling': 'comfort',
 			'image': ''
 		}, 
@@ -269,18 +236,77 @@ $(document).ready(function(){
 		{
 			'name': 'Oil Paint',
 			'color': 'oldlace',
-			'shape': '',
 			'feeling': 'nostalgia',
 			'image': ''
 		}, 
 
 		{
+			'name': 'Mint',
+			'color': 'limegreen',
+			'feeling': 'relaxed',
+			'image': ''
+		},
+
+		{
 			'name': 'Scrunched Up Tissue',
 			'color': 'oldlace',
-			'shape': '',
 			'feeling': 'indifferent',
 			'image': ''
 		}
+
+	]
+
+	var colors = [
+		{
+			'name': 'R',
+			'image': ''
+		},
+
+		{
+			'name': 'O',
+			'image': ''
+		},
+
+		{
+			'name': 'Y',
+			'image': ''
+		},
+
+		{
+			'name': 'G',
+			'image': ''
+		},
+
+		{
+			'name': 'B',
+			'image': ''
+		},
+
+		{
+			'name': 'I',
+			'image': ''
+		},
+
+		{
+			'name': 'V',
+			'image': ''
+		}
+
+
+	]
+
+	var feelings = [
+		{
+
+		},
+
+		{
+
+		},
+
+		{
+
+		},
 
 	]
 
@@ -299,10 +325,13 @@ $(document).ready(function(){
 	});
 
 	//code for first 3 vials selected randomly
+	var scentsCopy = scents.slice(0);
+
 	for(i=0; i<3; i++){
-		var randomScent = scents[Math.floor(Math.random()*scents.length)];
+		var randomScent = scentsCopy[Math.floor(Math.random()*scentsCopy.length)];
+		scentsCopy.splice(randomScent, 1);
 		var scentDiv = $('<div/>', {'class': 'scents'})
-		.data('randomscent', randomScent)
+		.data('randomscent', scentsCopy)
 		.append('<img src="images/vial.png" class="vials">')
 		.on('mouseenter', function(){
 			console.log($(this).data("randomscent").name);
@@ -315,27 +344,6 @@ $(document).ready(function(){
 		$('#random_items').append(scentDiv);
 	}
 
-	// for(i=0; i<3; i++){
-	// 	var randomScent = scents[Math.floor(Math.random()*scents.length)];
-	// 	var scentDiv = $('<div/>', {'class': 'scents'})
-	// 	var noRepeat = randomScent.includes('')
-	// 	.data('randomscent', randomScent)
-	// 	.append('<img src="images/vial.png" class="vials">')
-	// 	.on('mouseenter', function(){
-	// 		if($(this).data(randomscent).name === noRepeat) {
-	// 			console.log($(this).data("randomscent").name);
-	// 			$('body').css({'background-color': $(this).data("randomscent").color});
-	// 			$('body').append('<h1 id="scent_name" style="display: inline;">' + $(this).data("randomscent").name + '</h1>');
-	// 		} else {
-
-	// 		}
-	// 	})
-	// 	.on('mouseleave', function(){
-	// 		$('#scent_name').remove();
-	// 	});
-	// 	$('#random_items').append(scentDiv);
-	// }
-
 	//sort by 
 	$('#sort_filter').data('clicked', false).click(function(){
 		if($(this).data('clicked') === false) {
@@ -346,7 +354,7 @@ $(document).ready(function(){
 				.on('mouseenter', function(){
 					$('body').css({'background-color': $(this).data("scents").color});
 					console.log($(this).data("scents").name);
-					$('body').append('<h1 id="scent_name" style="display: inline; left: 60%;">' + $(this).data("scents").name + '</h1>');
+					$('body').append('<h1 id="scent_name" style="display: inline; left: 60%; z-index: 100">' + $(this).data("scents").name + '</h1>');
 				})
 				.on('mouseleave', function(){
 					$('#scent_name').remove();
@@ -380,10 +388,17 @@ $(document).ready(function(){
 
 	//filter
 	$('#color_click').data('clicked', false).click(function(){
+		$('body').css({'background-color': 'white'});
+		$('#grid_items').css({'display': 'none'});
+		$('#color_items').css({'display': 'flex'});
 
 	});
 
 	$('#feeling_click').data('clicked', false).click(function(){
+	});
+
+	$('#package_click').click(function(){
+
 	});
 
 	//more 
@@ -396,7 +411,7 @@ $(document).ready(function(){
 				.on('mouseenter', function(){
 					$('body').css({'background-color': $(this).data("scents").color});
 					console.log($(this).data("scents").name);
-					$('body').append('<h1 id="scent_name" style="display: inline;">' + $(this).data("scents").name + '</h1>');
+					$('body').append('<h1 id="scent_name" style="display: inline; z-index: 100;">' + $(this).data("scents").name + '</h1>');
 				})
 				.on('mouseleave', function(){
 					$('#scent_name').remove();

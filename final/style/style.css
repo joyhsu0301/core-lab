@@ -1,11 +1,13 @@
 body {
 	overflow: hidden;
+	cursor: default;
 }
-h1, p {
+h1, p, span {
 	font-family: 'helvetica';
 	font-weight: bold;
 	font-size: 30px;
 }
+
 
 @keyframes fadeInOpacity {
 	0% {
@@ -53,17 +55,17 @@ h1, p {
 /*flexbox containers*/
 #items, #random_items {
 	position: absolute; 
-	top: 29%;
+	top: 55%;
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
-	width: 300px;
-	height: 80px;
+	width: 600px;
+	height: 500px;
 	display: flex;
 	flex-flow: wrap;
 	z-index: 12;
 }
-#grid_items {
+#grid_items, #color_items {
 	position: absolute;
 	left: 370px;
 	width: 75%;
@@ -74,17 +76,17 @@ h1, p {
 
 /*flexbox children */
 .scents {
-	width: 100px;
+	width: 140px;
 	height: 200px;
-	padding: 10px
-	margin-bottom: 100px;
-	margin-top: 100px;
+	padding: 30px;
+	margin-bottom: 70px;
+	margin-top: 70px;
 }
 .scents:hover {
 	background-color: blue;
 }
 .vials {
-	width: 100px;
+	width: 140px;
 	height: 200px;
 }
 
@@ -132,15 +134,15 @@ h1, p {
 	transition: all 0.5s ease;
 	background-color: rgb(0,0,0); 
 }
-#color_click, #feeling_click {
+#color_click, #feeling_click, #package_click {
 	padding: 20px;
-	margin: 10px;
+	margin-left: -15px;
 	position: relative;
-	top: 250px;
+	top: 180px;
 	color: rgb(255,255,255);
 	z-index: 100;
 }
-#color_click:hover, #feeling_click:hover {
+#color_click:hover, #feeling_click:hover, #package_click:hover {
 	color: blue;
 }
 #close {
