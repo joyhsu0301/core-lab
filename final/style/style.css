@@ -34,7 +34,7 @@ span:hover {
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
 	width: 600px;
-	height: 300px;
+	height: 400px;
 	z-index: 20;
 }
 #title {
@@ -117,10 +117,6 @@ span:hover {
 .vials {
 	width: 140px;
 	height: 200px;
-}
-.scents_image {
-	width: 50px;
-	height: 50px;
 }
 
 /*clickable text*/
