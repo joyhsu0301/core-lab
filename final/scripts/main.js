@@ -5,35 +5,35 @@ $(document).ready(function(){
 			'name': 'Beijing Home',
 			'color': 'peru',
 			'feeling': 'nostalgia',
-			'image': ''
+			'image': 'https://www.pngfind.com/pngs/m/357-3570347_aesthetic-clipart-tumblr-transparent-overlay-aesthetic-stars-png.png'
 		},
 
 		{
 			'name': 'Taipei Home',
 			'color': 'blanchedalmond',
 			'feeling': 'vacation',
-			'image': ''
+			'image': 'https://www.pngfind.com/pngs/m/357-3570347_aesthetic-clipart-tumblr-transparent-overlay-aesthetic-stars-png.png'
 		},
 
 		{
 			'name': 'New York Home',
 			'color': 'beige',
 			'feeling': 'comfort',
-			'image': ''
+			'image': 'https://www.pngfind.com/pngs/m/357-3570347_aesthetic-clipart-tumblr-transparent-overlay-aesthetic-stars-png.png'
 		},
 
 		{
 			'name': 'Grandmas House',
 			'color': 'sienna',
 			'feeling': 'nostalgia',
-			'image': ''
+			'image': 'https://www.pngfind.com/pngs/m/357-3570347_aesthetic-clipart-tumblr-transparent-overlay-aesthetic-stars-png.png'
 		},
 
 		{
 			'name': 'Junyis House',
 			'color': 'cornsilk',
 			'feeling': 'happy',
-			'image': ''
+			'image': 'https://www.pngfind.com/pngs/m/357-3570347_aesthetic-clipart-tumblr-transparent-overlay-aesthetic-stars-png.png'
 		},
 
 		{
@@ -256,70 +256,6 @@ $(document).ready(function(){
 
 	]
 
-	// var colors = [
-	// 	{
-	// 		'name': 'REDs',
-	// 		'image': ''
-	// 	},
-
-	// 	{
-	// 		'name': 'YELLOWs',
-	// 		'image': ''
-	// 	},
-
-	// 	{
-	// 		'name': 'GREENs',
-	// 		'image': ''
-	// 	},
-
-	// 	{
-	// 		'name': 'BLUEs',
-	// 		'image': ''
-	// 	},
-
-	// 	{
-	// 		'name': 'PURPLEs',
-	// 		'image': ''
-	// 	},
-
-	// 	{
-	// 		'name': 'PINKs',
-	// 		'image': ''
-	// 	},
-
-	// 	{
-	// 		'name': 'GRAYs',
-	// 		'image': ''
-	// 	},
-
-	// 	{
-	// 		'name': 'BROWNs',
-	// 		'image': ''
-	// 	},
-
-	// 	{
-	// 		'name': 'WHITEs',
-	// 		'image': ''
-	// 	}
-
-
-	// ]
-
-	// var feelings = [
-	// 	{
-
-	// 	},
-
-	// 	{
-
-	// 	},
-
-	// 	{
-
-	// 	},
-
-	// ]
-
 	$('#boxlid').click(function(){
 		$('#boxlid').css({'display': 'none'});
 		$('#title2').css({'display':'inline', 'opacity': '1', 'animation-name': 'fadeInOpacity','animation-iteration-count': '1','animation-timing-function': 'ease-in','animation-duration': '0.75s'});
@@ -333,6 +269,8 @@ $(document).ready(function(){
 	$('#boxlid').on('mouseleave', function(){
 		$('#title').css({'color': 'black'});
 	});
+
+	//onclick of each scent 
 
 	//code for first 3 vials selected randomly
 	var scentsCopy = scents.slice(0);
@@ -351,6 +289,11 @@ $(document).ready(function(){
 		})
 		.on('mouseleave', function(){
 			$('#scent_name').remove();
+		})
+		.click(function(){
+			positiontop = Math.random()*1000;
+			positionleft = Math.random()*1000;
+			$('#image_farm').append('<img class="scents_image" style="top: '+positiontop+'px; left: '+positionleft+'px; position: fixed; src="' + $(this).data("randomscent").image + '">');
 		});
 		$('#random_items').append(scentDiv);
 	}
@@ -370,6 +313,8 @@ $(document).ready(function(){
 		$('#less').css({'display': 'none'});
 		$('.sidenav').css({'width':'100%'});
 		$('#sort_filter').css({'display': 'none'});
+		$('#image_farm').css({'display': 'none'});
+		$('#clear').css({'display': 'none'});
 	});
 
 	$('#close').click(function(){
@@ -380,11 +325,16 @@ $(document).ready(function(){
 		$('#title2').css({'display': 'inline'});
 		$('#grid_items').css({'display': 'none'});
 		$('#color_items').css({'display': 'none'});
+		$('#image_farm').css({'display': 'inline'});
 	});
 
 	//filter
 	function searchByColor(color) {
-		var filteredArray = scents.filter(scent => scents.color === color);
+		var filteredArray = scents.filter(scent => scents.color === color).name;
+		return filteredArray;
+	}
+	function searchByFeeling(feeling) {
+		var filteredArray = scents.filter(scent => scents.feeling === feeling).name;
 		return filteredArray;
 	}
 
@@ -408,16 +358,18 @@ $(document).ready(function(){
 			$('#feeling_click').css({'left': '-100px', 'transform': 'rotate(90deg)', 'margin-top': '170px'});
 			$('#package_click').css({'left': '-100px', 'transform': 'rotate(90deg)', 'margin-top': '190px'});
 			$('#color_items').css({'display': 'inline'});
+			$('#red').css({'text-decoration': 'line-through'}).data('clicked', true);
 			$(this).data('clicked', true);
-		} else {
+		} 
+	});
 
-		}
+	$('#color_items').on('mouseenter', function(){
+		$('#red').click(function(){
+			console.log(searchByColor('darkred', 'crimson', 'firebrick'));
+		});
 	});
 
 	$('#feeling_click').data('clicked', false).click(function(){
-		// if($('#color_click').data('clicked') === true) {
-		// 	$('#color_click').css({'color': 'yellow'});
-		// }
 
 	});
 
@@ -439,6 +391,11 @@ $(document).ready(function(){
 				})
 				.on('mouseleave', function(){
 					$('#scent_name').remove();
+				})
+				.click(function(){
+				positiontop = Math.random()*1000;
+				positionleft = Math.random()*1000;
+				$('#image_farm').append('<img class="scents_image" style="top: '+positiontop+'px; left: '+positionleft+'px; position: fixed; src="' + $(this).data("scents").image + '">');
 				});
 				$('#items').append(scentsDiv);
 				$(this).data('clicked', true);
@@ -447,6 +404,8 @@ $(document).ready(function(){
 			$('body').css({'background-color':'white'});
 		}
 		$('#more_scroll').css({'display':'none'});
+		$('#title2').css({'display': 'none'});
+		$('#clear').css({'display': 'inline'});
 		$('#less').css({'display':'inline', 'opacity': '1', 'animation-name': 'fadeInOpacity','animation-iteration-count': '1','animation-timing-function': 'ease-in','animation-duration': '0.75s'});
 		$('#items').css({'display':'flex'});
 		$('#random_items').css({'display': 'none'});
@@ -459,6 +418,20 @@ $(document).ready(function(){
 		$('#more_scroll').css({'display':'inline'});
 		$('#items').css({'display':'none'});
 		$('#random_items').css({'display': 'flex'});
+	});
+
+	//clear and click me
+	$('#clear').click(function(){
+		$('#image_farm').empty();
+	});
+	$('.scents').on('mouseenter', function(){
+		$('#title2').css({'display': 'none'});
+		$('#clickme').css({'display': 'inline'});
+		$('#clear').css({'display': 'none'});
+	});
+	$('.scents').on('mouseleave', function(){
+		$('#clear').css({'display': 'inline'});
+		$('#clickme').css({'display': 'none'});
 	});
 
 
