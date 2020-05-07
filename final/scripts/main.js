@@ -380,7 +380,6 @@ $(document).ready(function(){
 		$('.sidenav').css({'width':'100%', 'background-color': 'black'});
 		$('#color_click').css({'left': '550px', 'transform': 'rotate(0deg)', 'margin-top': '35px'});
 		$('#feeling_click').css({'left': '550px', 'transform': 'rotate(0deg)', 'margin-top': '30px'});
-		$('#package_click').css({'left': '550px', 'transform': 'rotate(0deg)', 'margin-top': '30px'});
 		$('#sort_filter').css({'display': 'none'});
 		$('#image_farm').css({'display': 'none'});
 		$('#clear').css({'display': 'none'});
@@ -606,9 +605,8 @@ $(document).ready(function(){
 	}
 
 	function transformText() {
-		$('#color_click').css({'left': '-100px', 'transform': 'rotate(90deg)', 'margin-top': '-150px'});
+		$('#color_click').css({'left': '-100px', 'transform': 'rotate(90deg)', 'margin-top': '-30px'});
 		$('#feeling_click').css({'left': '-100px', 'transform': 'rotate(90deg)', 'margin-top': '170px'});
-		$('#package_click').css({'left': '-100px', 'transform': 'rotate(90deg)', 'margin-top': '190px'});
 	}
 
 	$('#color_click').data('clicked', false).click(function(){
@@ -637,10 +635,6 @@ $(document).ready(function(){
 		}
 		transformText(); 
 		$('#color_items').css({'display': 'none'});
-	});
-
-	$('#package_click').data('clicked', false).click(function(){
-		transformText(); 
 	});
 
 	//more 
