@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var scents = [
 		{
 			'name': 'Beijing Home',
-			'color': 'peru',
+			'color': 'saddlebrown',
 			'feeling': 'nostalgia',
 			'image': 'https://pngimg.com/uploads/sofa/sofa_PNG6955.png',
 			'width': '100',
@@ -19,6 +19,7 @@ $(document).ready(function(){
 			'height': '66'
 		},
 
+
 		{
 			'name': 'New York Home',
 			'color': 'beige',
@@ -30,7 +31,7 @@ $(document).ready(function(){
 
 		{
 			'name': 'Grandmas House',
-			'color': 'sienna',
+			'color': 'saddlebrown',
 			'feeling': 'nostalgia',
 			'image': 'images/buddha.png',
 			'width': '80',
@@ -148,7 +149,7 @@ $(document).ready(function(){
 
 		{
 			'name': 'Swimming Pool',
-			'color': 'deepskyblue',
+			'color': 'lightblue',
 			'feeling': 'vacation',
 			'image': 'https://pluspng.com/img-png/swimming-goggles-png-swb-1m-sm-y-png-842.png',
 			'width': '100',
@@ -166,7 +167,7 @@ $(document).ready(function(){
 
 		{
 			'name': 'Chinese New Years Dinner',
-			'color': 'crimson',
+			'color': 'darkred',
 			'feeling': 'comfort',
 			'image': 'images/fish.png',
 			'width': '100',
@@ -175,7 +176,7 @@ $(document).ready(function(){
 
 		{
 			'name': 'Bamboo Forest',
-			'color': 'limegreen',
+			'color': 'green',
 			'feeling': 'relaxed',
 			'image': 'images/bamboo.png',
 			'width': '70',
@@ -184,7 +185,7 @@ $(document).ready(function(){
 
 		{
 			'name': 'Tatami',
-			'color': 'limegreen',
+			'color': 'green',
 			'feeling': 'comfort',
 			'image': 'images/table.png',
 			'width': '100',
@@ -203,7 +204,7 @@ $(document).ready(function(){
 		{
 			'name': 'Warm Souffle',
 			'color': 'burlywood',
-			'feeling': 'happy',
+			'feeling': 'hungry',
 			'image': 'images/souffle.png',
 			'width': '80',
 			'height': '80'
@@ -220,7 +221,7 @@ $(document).ready(function(){
 
 		{
 			'name': 'Makeup',
-			'color': 'dimgray',
+			'color': 'gray',
 			'feeling': 'sad',
 			'image': 'images/makeup.png',
 			'width': '140',
@@ -229,7 +230,7 @@ $(document).ready(function(){
 
 		{
 			'name': 'Shakshuka',
-			'color': 'firebrick',
+			'color': 'darkred',
 			'feeling': 'hungry',
 			'image': 'images/shakshuka.png',
 			'width': '80',
@@ -310,7 +311,7 @@ $(document).ready(function(){
 
 		{
 			'name': 'Mint',
-			'color': 'limegreen',
+			'color': 'green',
 			'feeling': 'relaxed',
 			'image': 'images/mint.png',
 			'width': '35',
@@ -321,7 +322,7 @@ $(document).ready(function(){
 			'name': 'Scrunched Up Tissue',
 			'color': 'oldlace',
 			'feeling': 'indifferent',
-			'image': 'https://lh3.googleusercontent.com/proxy/BrYsdU77qpIdVpMx4O4qrF0xaA7sKRKY7iOtqew20KpBdXU9jbjGcrJRu-dEWVcXwedVBERrMh8Pb2WghsZ2hTrSmWRlqC347XH8Tr8-WzMgH-543DA',
+			'image': 'images/tissue.png',
 			'width': '100',
 			'height': '100'
 		}
@@ -341,8 +342,6 @@ $(document).ready(function(){
 	$('#boxlid').on('mouseleave', function(){
 		$('#title').css({'color': 'black'});
 	});
-
-	//onclick of each scent 
 
 	//code for first 3 vials selected randomly
 	var scentsCopy = scents.slice(0);
@@ -372,18 +371,16 @@ $(document).ready(function(){
 
 	//sort by 
 	$('#sort_filter').click(function(){
-		if($('#color_click').data('clicked') === true) {
-			$('#grid_items').css({'display': 'flex'});
-			$('#color_items').css({'display': 'inline'});
-		}
-		$('body').css({'overflow-y':'visible'});
+		$('body').css({'overflow-y':'visible', 'background-color': 'white'});
 		$('#title2').css({'display': 'none'});
-		$('body').css({'background-color': 'white'});
 		$('#items').css({'display':'none'});
 		$('#random_items').css({'display':'none'});
 		$('#more_scroll').css({'display': 'none'});
 		$('#less').css({'display': 'none'});
-		$('.sidenav').css({'width':'100%'});
+		$('.sidenav').css({'width':'100%', 'background-color': 'black'});
+		$('#color_click').css({'left': '550px', 'transform': 'rotate(0deg)', 'margin-top': '35px'});
+		$('#feeling_click').css({'left': '550px', 'transform': 'rotate(0deg)', 'margin-top': '30px'});
+		$('#package_click').css({'left': '550px', 'transform': 'rotate(0deg)', 'margin-top': '30px'});
 		$('#sort_filter').css({'display': 'none'});
 		$('#image_farm').css({'display': 'none'});
 		$('#clear').css({'display': 'none'});
@@ -397,57 +394,253 @@ $(document).ready(function(){
 		$('#title2').css({'display': 'inline'});
 		$('#grid_items').css({'display': 'none'});
 		$('#color_items').css({'display': 'none'});
+		$('#feeling_items').css({'display': 'none'});
 		$('#image_farm').css({'display': 'inline'});
 		$('#image_farm').empty();
 	});
 
-	//filter
+	//filter functions
 	function searchByColor(color) {
-		var filteredArray = scents.filter(scent => scents.color === color).name;
+		var filteredArray = scents.filter(scent => scent.color === color);
 		return filteredArray;
 	}
+
 	function searchByFeeling(feeling) {
-		var filteredArray = scents.filter(scent => scents.feeling === feeling).name;
+		var filteredArray = scents.filter(scent => scent.feeling === feeling);
 		return filteredArray;
+	}
+
+	function populatePage (filteredArray) {
+		for(i=0; i<filteredArray.length; i++){
+			var colorDivs = $('<div/>', {'class': 'scents'})
+			.data('scents', filteredArray[i])
+			.append('<img src="images/vial.png" class="vials">')
+			.on('mouseenter', function(){
+				$('.sidenav').css({'background-color': $(this).data("scents").color});
+					console.log($(this).data("scents").name);
+				$('.sidenav').append('<h1 id="scent_name" style="display: inline; top: 180px; z-index: 200">' + $(this).data("scents").name + '</h1>');
+			})
+			.on('mouseleave', function(){
+					$('#scent_name').remove();
+			});
+			$('#grid_items').append(colorDivs);
+		}
+	}
+
+	//filter by color
+	$('#red').click(function(){
+		$('#grid_items').empty();
+		$('.sidenav').css({'background-color': 'darkred'});
+		var colorScents = searchByColor("darkred");
+		populatePage(colorScents);
+	});
+
+	$('#yellow').click(function(){
+		$('#grid_items').empty();
+		$('.sidenav').css({'background-color': 'lightyellow'});
+		var colorScents = searchByColor("lightyellow");
+		populatePage(colorScents);
+	});
+
+	$('#green').click(function(){
+		$('#grid_items').empty();
+		$('.sidenav').css({'background-color': 'green'});
+		var colorScents = searchByColor("green");
+		populatePage(colorScents);
+		var colorScents2 = searchByColor("darkseagreen");
+		populatePage(colorScents2);
+	});
+
+	$('#blue').click(function(){
+		$('#grid_items').empty();
+		$('.sidenav').css({'background-color': 'lightblue'});
+		var colorScents = searchByColor("lightblue");
+		populatePage(colorScents);
+	});
+
+	$('#purple').click(function(){
+		$('#grid_items').empty();
+		$('.sidenav').css({'background-color': 'purple'});
+		var colorScents = searchByColor("purple");
+		populatePage(colorScents);
+	});
+
+	$('#pink').click(function(){
+		$('#grid_items').empty();
+		$('.sidenav').css({'background-color': 'palevioletred'});
+		var colorScents = searchByColor("palevioletred");
+		populatePage(colorScents);
+	});
+
+	$('#white').click(function(){
+		$('#grid_items').empty();
+		$('.sidenav').css({'background-color': 'white'});
+		var colorScents = searchByColor("white");
+		populatePage(colorScents);
+	});
+
+	$('#gray').click(function(){
+		$('#grid_items').empty();
+		$('.sidenav').css({'background-color': 'gray'});
+		var colorScents = searchByColor("gray");
+		populatePage(colorScents);
+		var colorScents2 = searchByColor("darkslategray");
+		populatePage(colorScents2);
+		var colorScents3 = searchByColor("lightgray");
+		populatePage(colorScents3);
+	});
+
+	$('#brown').click(function(){
+		$('#grid_items').empty();
+		$('.sidenav').css({'background-color': 'saddlebrown'});
+		var colorScents = searchByColor("saddlebrown");
+		populatePage(colorScents);
+		var colorScents2 = searchByColor("peru");
+		populatePage(colorScents2);
+	});
+
+	$('#neutral').click(function(){
+		$('#grid_items').empty();
+		$('.sidenav').css({'background-color': 'burlywood'});
+		var colorScents = searchByColor("burlywood");
+		populatePage(colorScents);
+		var colorScents2 = searchByColor("oldlace");
+		populatePage(colorScents2);
+		var colorScents3 = searchByColor("beige");
+		populatePage(colorScents3);
+		var colorScents4 = searchByColor("cornsilk");
+		populatePage(colorScents4);
+		var colorScents5 = searchByColor("blanchedalmond");
+		populatePage(colorScents5);
+	});
+
+
+	//filter by feeling
+	$('#indifferent').click(function(){
+		$('#grid_items').empty();
+		$('.sidenav').css({'background-color': 'oldlace'});
+		var feelingScents = searchByFeeling("indifferent");
+		populatePage(feelingScents);
+	});
+
+	$('#nostalgia').click(function(){
+		$('#grid_items').empty();
+		$('.sidenav').css({'background-color': 'saddlebrown'});
+		var feelingScents = searchByFeeling("nostalgia");
+		populatePage(feelingScents);
+	});
+
+	$('#comfort').click(function(){
+		$('#grid_items').empty();
+		$('.sidenav').css({'background-color': 'beige'});
+		var feelingScents = searchByFeeling("comfort");
+		populatePage(feelingScents);
+	});
+
+	$('#happy').click(function(){
+		$('#grid_items').empty();
+		$('.sidenav').css({'background-color': 'cornsilk'});
+		var feelingScents = searchByFeeling("happy");
+		populatePage(feelingScents);
+	});
+
+	$('#gross').click(function(){
+		$('#grid_items').empty();
+		$('.sidenav').css({'background-color': 'darkslategray'});
+		var feelingScents = searchByFeeling("gross");
+		populatePage(feelingScents);
+	});
+
+	$('#relaxed').click(function(){
+		$('#grid_items').empty();
+		$('.sidenav').css({'background-color': 'lightyellow'});
+		var feelingScents = searchByFeeling("relaxed");
+		populatePage(feelingScents);
+	});
+
+	$('#hungry').click(function(){
+		$('#grid_items').empty();
+		$('.sidenav').css({'background-color': 'burlywood'});
+		var feelingScents = searchByFeeling("hungry");
+		populatePage(feelingScents);
+	});
+
+	$('#sad').click(function(){
+		$('#grid_items').empty();
+		$('.sidenav').css({'background-color': 'white'});
+		var feelingScents = searchByFeeling("sad");
+		populatePage(feelingScents);
+	});
+
+	$('#vacation').click(function(){
+		$('#grid_items').empty();
+		$('.sidenav').css({'background-color': 'blanchedalmond'});
+		var feelingScents = searchByFeeling("vacation");
+		populatePage(feelingScents);
+	});
+
+	$('#otherworldly').click(function(){
+		$('#grid_items').empty();
+		$('.sidenav').css({'background-color': 'green'});
+		var feelingScents = searchByFeeling("otherworldly");
+		populatePage(feelingScents);
+	});
+
+	//sort by buttons
+	function fullGrid() {
+		$('#grid_items').empty();
+		for(i=0; i<scents.length; i++){
+			var scentsDiv = $('<div/>', {'class': 'scents'})
+			.data('scents', scents[i])
+			.append('<img src="images/vial.png" class="vials">')
+			.on('mouseenter', function(){
+				$('.sidenav').css({'background-color': $(this).data("scents").color});
+					console.log($(this).data("scents").name);
+				$('.sidenav').append('<h1 id="scent_name" style="display: inline; top: 180px; z-index: 200">' + $(this).data("scents").name + '</h1>');
+			})
+			.on('mouseleave', function(){
+				$('#scent_name').remove();
+			});
+			$('#grid_items').append(scentsDiv);
+		}
+	}
+
+	function transformText() {
+		$('#color_click').css({'left': '-100px', 'transform': 'rotate(90deg)', 'margin-top': '-150px'});
+		$('#feeling_click').css({'left': '-100px', 'transform': 'rotate(90deg)', 'margin-top': '170px'});
+		$('#package_click').css({'left': '-100px', 'transform': 'rotate(90deg)', 'margin-top': '190px'});
 	}
 
 	$('#color_click').data('clicked', false).click(function(){
 		if($(this).data('clicked') === false) {
-			for(i=0; i<scents.length; i++){
-				var scentsDiv = $('<div/>', {'class': 'scents'})
-				.data('scents', scents[i])
-				.append('<img src="images/vial.png" class="vials">')
-				.on('mouseenter', function(){
-					$('.sidenav').css({'background-color': $(this).data("scents").color});
-					console.log($(this).data("scents").name);
-					$('.sidenav').append('<h1 id="scent_name" style="display: inline; top: 180px; z-index: 200">' + $(this).data("scents").name + '</h1>');
-				})
-				.on('mouseleave', function(){
-					$('#scent_name').remove();
-				});
-				$('#grid_items').append(scentsDiv);
-			}
-			$('#color_click').css({'left': '-100px', 'transform': 'rotate(90deg)', 'margin-top': '-150px'});
-			$('#feeling_click').css({'left': '-100px', 'transform': 'rotate(90deg)', 'margin-top': '170px'});
-			$('#package_click').css({'left': '-100px', 'transform': 'rotate(90deg)', 'margin-top': '190px'});
 			$('#color_items').css({'display': 'inline'});
-			$('#red').css({'text-decoration': 'line-through'}).data('clicked', true);
+			fullGrid();
 			$(this).data('clicked', true);
-		} 
-	});
-
-	$('#color_items').on('mouseenter', function(){
-		$('#red').click(function(){
-			console.log(searchByColor('darkred', 'crimson', 'firebrick'));
-		});
+		} else{
+			$('#color_items').css({'display': 'inline'});
+			$('#grid_items').css({'display': 'flex'});
+			fullGrid();
+		}
+		transformText(); 
+		$('#feeling_items').css({'display': 'none'});
 	});
 
 	$('#feeling_click').data('clicked', false).click(function(){
-
+		if($(this).data('clicked') === false) {
+			$('#feeling_items').css({'display': 'inline'});
+			fullGrid();
+			$(this).data('clicked', true);
+		} else{
+			$('#feeling_items').css({'display': 'inline'});
+			$('#grid_items').css({'display': 'flex'});
+			fullGrid();
+		}
+		transformText(); 
+		$('#color_items').css({'display': 'none'});
 	});
 
 	$('#package_click').data('clicked', false).click(function(){
-
+		transformText(); 
 	});
 
 	//more 
@@ -472,7 +665,7 @@ $(document).ready(function(){
 						});
 						$('#items').append(scentsDiv);
 						$(this).data('clicked', true);
-					}
+				}
 		} else{
 			$('body').css({'background-color':'white'});
 		}

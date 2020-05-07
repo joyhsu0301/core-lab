@@ -85,7 +85,7 @@ span:hover {
 	flex-flow: wrap;
 	z-index: 10;
 }
-#color_items {
+#color_items, #feeling_items {
 	position: absolute;
 	width: 100%;
 	height: 50px;
@@ -112,7 +112,7 @@ span:hover {
 	margin-top: 50px;
 }
 .scents:hover {
-	background-color: blue;
+	opacity: 65%;
 }
 .vials {
 	width: 140px;
