@@ -362,6 +362,7 @@ $(document).ready(function(){
 			$('#scent_name').remove();
 		})
 		.click(function(){
+			$('audio#sound')[0].play();
 			positiontop = Math.random()*1000;
 			positionleft = Math.random()*1000;
 			$('#image_farm').append('<img src="'+$(this).data("randomscent").image+'" style="top: '+positiontop+'px; left: '+positionleft+'px; width: '+$(this).data("randomscent").width+'px; height: '+$(this).data("randomscent").height+'px; position: fixed;">');
@@ -653,6 +654,7 @@ $(document).ready(function(){
 					$('#scent_name').remove();
 				})
 				.click(function(){
+					$('audio#sound')[0].play();
 					positiontop = Math.random()*1000;
 					positionleft = Math.random()*1000;
 					$('#image_farm').append('<img src="'+$(this).data("scents").image+'" style="top: '+positiontop+'px; left: '+positionleft+'px; width: '+$(this).data("scents").width+'px; height: '+$(this).data("scents").height+'px; position: fixed;">');
